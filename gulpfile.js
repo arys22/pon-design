@@ -1,3 +1,5 @@
+const gulp = require("gulp");
+
 // CSSコードの圧縮
 var cleanCSS = require('gulp-clean-css');
 var rename   = require("gulp-rename");
