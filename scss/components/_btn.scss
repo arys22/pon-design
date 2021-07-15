@@ -1,0 +1,10 @@
+.btn{
+  background: linear-gradient(to left,#250D65,#7633A4);
+  width: 200px;
+  height: 60px;
+  border-radius: 100vh;
+  transition: all 0.3s ease-out;
+  &:hover{
+    background: linear-gradient(to right,#250D65,#7633A4);
+  }
+}

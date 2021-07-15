@@ -1,0 +1,64 @@
+@use "config" as cfg;
+/*追加のリセットCSS*/
+/*boder,pading含める*/
+*, *::before , *::after{
+  box-sizing: border-box;
+  }
+/*1rem＝10px*/
+html {
+  font-size: 62.5%;
+  }
+/* img */
+img{
+width: 100%;
+height: auto;
+vertical-align: bottom;
+  }
+/* aタグ */
+a {
+text-decoration: none;
+display: inline-block;
+color: inherit;
+width: 100%;
+height: 100%;
+&:hover{
+  opacity: .7;
+  transition: opacity .3s ease-out;
+  }
+}
+/* ボタン */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  }
+/* form */
+input, textarea {
+  resize:none;
+  appearance:none;
+  outline:none;
+  }
+
+  // font-family: 'Montserrat',sans-serif;
+// font-family:  "Hiragino Sans", "ヒラギノ角ゴシック",sans-serif;
+body {
+  font-family:"Hiragino Sans", "ヒラギノ角ゴシック", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  line-height: 1.785;
+  color: #333333;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  // overflow: hidden;
+}
+/* セクションごとの左右のpadding */
+.content_wrapper {
+  padding: 0 4%;
+}
+

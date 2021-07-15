@@ -1,0 +1,9 @@
+@use "variables";
+
+@mixin text($c: variables.$mc, $s: 30px) {
+  color: $c;
+  font-size: $s;
+  font-family: variables.$ff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
