@@ -5,15 +5,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 812px;
+  // height: 812px;
   width: 100%;
   color: #fff;
   position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   &__text {
     width: fit-content;
-    position: absolute;
-    top: 227.8px;
-    left: 13.33%;
+    margin-left: 13.33%;
+    // position: absolute;
+    // top: 227.8px;
+    // left: 13.33%;
   }
   &__title {
     @include cfg.text(#fff, 4.8);

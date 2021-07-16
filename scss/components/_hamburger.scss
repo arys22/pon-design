@@ -3,6 +3,7 @@
   display: block;
   position: relative;
   width: 44px;
+  height: 44px;
   cursor: pointer;
   z-index: 99;
   transition: 0.3s ease-out;
@@ -13,11 +14,20 @@
   &__line {
     display: block;
     position: absolute;
-    left: 0;
-    width: 31px;
+    left: 5px;
+    width: 34px;
     height: 2px;
     background-color: #FFFFFF;
     transition: 0.3s ease-out;
     border-radius: 1px;
   }
+}
+#line1 {
+  top: 15.5px;
+}
+#line2 {
+  top: 22.5px;
+}
+#line3 {
+  bottom: 13.5px;
 }

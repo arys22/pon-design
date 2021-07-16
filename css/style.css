@@ -167,9 +167,9 @@ body {
 .header {
   position: fixed;
   width: 100%;
-  padding: 0px 0;
+  padding: 9px 0;
   left: 0;
-  top: 10px;
+  top: 0;
   z-index: 48;
   -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
@@ -210,18 +210,22 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 812px;
   width: 100%;
   color: #fff;
   position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .fv__text {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  position: absolute;
-  top: 227.8px;
-  left: 13.33%;
+  margin-left: 13.33%;
 }
 .fv__title {
   color: #fff;
@@ -327,10 +331,45 @@ body {
     opacity: 0;
   }
 }
+.nav_sp {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#642390), to(#19074A));
+  background: linear-gradient(to bottom right, #642390, #19074A);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.nav_sp__list {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  line-height: 1;
+}
+.nav_sp__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .hamburger {
   display: block;
   position: relative;
   width: 44px;
+  height: 44px;
   cursor: pointer;
   z-index: 99;
   -webkit-transition: 0.3s ease-out;
@@ -343,12 +382,24 @@ body {
 .hamburger__line {
   display: block;
   position: absolute;
-  left: 0;
-  width: 31px;
+  left: 5px;
+  width: 34px;
   height: 2px;
   background-color: #FFFFFF;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   border-radius: 1px;
+}
+
+#line1 {
+  top: 15.5px;
+}
+
+#line2 {
+  top: 22.5px;
+}
+
+#line3 {
+  bottom: 13.5px;
 }
 /*# sourceMappingURL=style.css.map */
