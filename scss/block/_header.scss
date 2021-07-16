@@ -1,3 +1,4 @@
+@use "../config" as cfg;
 // header
 .header {
   position: fixed;
@@ -7,15 +8,20 @@
   top: 10px;
   z-index: 48;
   transition: 0.8s ease-in-out;
+  &__wrapper {
+    padding: 0 15px;
+  }
   &__wrap {
     display: flex;
     justify-content: space-between;
     height: 44px;
   }
   &__title {
-    font-size: 1.8rem;
+    @include cfg.text(#fff, 1.8);
     line-height: 1.222;
-    text-transform: capitalize;
     letter-spacing: 0.018em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

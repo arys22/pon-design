@@ -1,0 +1,85 @@
+@use "../config" as cfg;
+
+.fv {
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 812px;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  &__text {
+    width: fit-content;
+    position: absolute;
+    top: 227.8px;
+    left: 13.33%;
+  }
+  &__title {
+    @include cfg.text(#fff, 4.8);
+    letter-spacing: 0em;
+    line-height: 1.291;
+    margin-bottom: 17px;
+    &--s {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.8125;
+      letter-spacing: 0.108em;
+      margin-bottom: 47.9px;
+    }
+  }
+  &__btn {
+    border: 1px solid #fff;
+    border-radius: 100vh;
+    cursor: pointer;
+    width: 220px;
+    height: 60px;
+    @include cfg.text(#fff, 1.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__scroll {
+    height: 59.5px;
+    position: absolute;
+    right: 12px;
+    bottom: 0px;
+    line-height: 3.33;
+    letter-spacing: 0.08em;
+    writing-mode: vertical-rl;
+    @include cfg.text(#fff, 1.2);
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      margin-top: 10px;
+      right: 19.5px;
+      width: 1px;
+      background-color: #fff;
+      animation: move 1.4s ease-in infinite;
+      opacity: 0;
+    }
+  }
+  &__span {
+    position: absolute;
+    top: -54px;
+  }
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes move {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 49.5px;
+    opacity: 0;
+  }
+}
