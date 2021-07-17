@@ -1,0 +1,48 @@
+@use "../../config" as cfg;
+
+// topページのh2 title
+.top-h2{
+  text-align: center;
+  @include cfg.text();
+  line-height: 1.275;
+&--sub{
+font-size: 1.3rem;
+font-weight: 700;
+margin-top: 2px;
+display: block;
+}
+}
+
+// news
+.news{
+  margin-top: 40px;
+  &__list{
+    margin-top: 31px;
+  }
+  &__term{
+    font-family: cfg.$ff;
+  }
+  &__time{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
+  &__type{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 15px;
+    text-align: center;
+    width: 82px;
+    height: 19px;
+    background-color: #E8E8E8;
+    border-radius: 100vh;
+    display: inline-block;
+  }
+  &__text{
+    margin-top: 10px;
+    line-height: 1.928;
+    &:not(:last-child){
+      margin-bottom: 35px;
+    }
+  }
+}

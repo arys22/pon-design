@@ -42,10 +42,11 @@ input, textarea {
   outline:none;
   }
 
-  // font-family: 'Montserrat',sans-serif;
+// font-family: 'Montserrat',sans-serif;
 // font-family:  "Hiragino Sans", "ヒラギノ角ゴシック",sans-serif;
+// font-family: 'Noto Sans JP', sans-serif;
 body {
-  font-family:"Hiragino Sans", "ヒラギノ角ゴシック", sans-serif;
+  font-family:"Hiragino Sans", "ヒラギノ角ゴシック", 'Noto Sans JP',sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.05em;
   line-height: 1.785;
@@ -57,6 +58,7 @@ body {
 // .wrapper {
 //   // overflow: hidden;
 // }
+
 /* セクションごとの左右のpadding */
 .content_wrapper {
   padding: 0 20px;
