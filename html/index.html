@@ -15,63 +15,72 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__wrap">
-            <h1 class="header__title">pon design</h1>
+      <div id="app1">
+        <header class="header" :class="{'header-scroll': scrollY > 0}">
+          <div class="header__wrapper">
+            <div class="header__wrap">
+              <h1 class="header__title">pon design</h1>
 
-            <!-- ハンバーガーメニューのアイコン sp-->
-            <button type="button" id="hamburger" class="hamburger sp">
-              <span class="hamburger__line" id="line1"></span>
-              <span class="hamburger__line" id="line2"></span>
-              <span class="hamburger__line" id="line3"></span>
-            </button>
+              <!-- ハンバーガーメニューのアイコン sp-->
+                <button type="button" class="hamburger sp" v-on:click="ActiveBtn=!ActiveBtn">
+                  <span class="hamburger__line line1" :class="{'btn_line1':ActiveBtn}"></span>
+                  <span class="hamburger__line line2" :class="{'btn_line2':ActiveBtn}"></span><span class="hamburger__line line3" :class="{'btn_line3':ActiveBtn}"></span>
+                </button>
+                <!-- ナビ sp -->
+                <transition name="nav">
+                <nav class="nav_sp sp" v-show="ActiveBtn" :class="{'nav':ActiveBtn}">
+                  <ul class="nav_sp__list">
+                    <li class="nav_sp__item"><a href="#concept">concept</a></li>
+                    <li class="nav_sp__item"><a href="#service">service</a></li>
+                    <li class="nav_sp__item"><a href="#works">works</a></li>
+                    <li class="nav_sp__item"><a href="#company">company</a></li>
+                    <li class="nav_sp__item"><a href="#recruit">recruit</a></li>
+                    <li class="nav_sp__item">
+                      <a href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+              </transition>
+              </div>
 
-            <!-- ナビ sp -->
-            <nav class="nav_sp sp" id="nav">
-              <ul class="nav_sp__list">
-                <li class="nav_sp__item "><a href="#concept">concept</a></li>
-                <li class="nav_sp__item "><a href="#service">service</a></li>
-                <li class="nav_sp__item "><a href="#works">works</a></li>
-                <li class="nav_sp__item "><a href="#company">company</a></li>
-                <li class="nav_sp__item "><a href="#recruit">recruit</a></li>
-                <li class="nav_sp__item "><a href="contact.html">contact</a></li>
-              </ul>
-            </nav>
-
-            <!--ナビ pc -->
-            <!-- <nav class="nav_pc pc">
-              <ul class="nav_pc__list">
-                <li class="nav_pc__item italic">
-                  <a href="#concept">concept</a>
-                </li>
-                <li class="nav_pc__item italic">
-                  <a href="#service">service</a>
-                </li>
-                <li class="nav_pc__item italic"><a href="#works">works</a></li>
-                <li class="nav_pc__item italic">
-                  <a href="contact.html">contact</a>
-                </li>
-              </ul>
-            </nav> -->
-          </div>
+              <!--ナビ pc -->
+              <!-- <nav class="nav_pc pc">
+                <ul class="nav_pc__list">
+                  <li class="nav_pc__item italic">
+                    <a href="#concept">concept</a>
+                  </li>
+                  <li class="nav_pc__item italic">
+                    <a href="#service">service</a>
+                  </li>
+                  <li class="nav_pc__item italic"><a href="#works">works</a></li>
+                  <li class="nav_pc__item italic">
+                    <a href="contact.html">contact</a>
+                  </li>
+                </ul>
+              </nav> -->
+            </div>
+          </header>
         </div>
-      </header>
       <main>
         <!-- fv -->
         <div class="fv">
           <div class="fv__text">
-            <p class="fv__title">web<br>design<br>specialist</p>
-            <p class="fv__title--s">お客様の夢を叶える<br>Wabサイトを制作</p>
-            <a href="#" class="fv__btn">
-              contact
-            </a>
+            <p class="fv__title">web<br />design<br />specialist</p>
+            <p class="fv__title--s">お客様の夢を叶える<br />Wabサイトを制作</p>
+            <a href="#" class="fv__btn"> contact </a>
           </div>
           <div class="fv__scroll">
-            <span class="fv__span
-            ">scroll</span>
+            <span class="fv__span">scroll</span>
           </div>
         </div>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
       </main>
       <footer></footer>
     </div>

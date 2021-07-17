@@ -1,4 +1,6 @@
-// ハンバーガー
+@use "../config" as cfg;
+
+// ハンバーガーアイコン
 .hamburger {
   display: block;
   position: relative;
@@ -22,12 +24,69 @@
     border-radius: 1px;
   }
 }
-#line1 {
+.line1 {
   top: 15.5px;
 }
-#line2 {
+.line2 {
   top: 22.5px;
 }
-#line3 {
+.line3 {
   bottom: 13.5px;
+}
+
+
+// navメニュー
+.nav_sp {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #642390, #19074A);
+  position: absolute;
+  top: 0;
+  left: 0;
+  // transform: translateY(-100%);
+  opacity: 0;
+  // visibility: hidden;
+  // transition: all 0.5s ease-in-out;
+  &__list {
+    @include cfg.text(#fff,1.5);
+    text-align: center;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    line-height: 1.3;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+
+// アイコンの動き
+.btn_line1 {
+  transform: translateY(6.5px) rotate(-45deg);
+  transition: 0.4s ease;
+}
+.btn_line2 {
+  transition: 0.4s ease;
+  opacity: 0;
+}
+.btn_line3 {
+  transform: translateY(-6.5px) rotate(45deg);
+  transition: 0.4s ease;
+}
+// navメニューの動き
+.nav-enter-active, .nav-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.nav-enter, .nav-leave-to {
+  opacity: 0;
+}
+.nav-leave, .nav-enter-to{
+  opacity: 1;
+}
+// 読み込み時navメニューが一瞬表示される為追加
+.nav{
+  opacity: 1;
 }
