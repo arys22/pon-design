@@ -1,9 +1,16 @@
+@use "../config" as cfg;
+
 .btn{
+  display: block;
   background: linear-gradient(to left,#250D65,#7633A4);
   width: 200px;
   height: 60px;
   border-radius: 100vh;
   transition: all 0.3s ease-out;
+  text-align: center;
+  line-height: 4.25;
+  margin: 0 auto;
+  @include cfg.text(#fff, 1.4);
   &:hover{
     background: linear-gradient(to right,#250D65,#7633A4);
   }

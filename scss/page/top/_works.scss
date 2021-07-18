@@ -1,0 +1,18 @@
+@use "../../config" as cfg;
+.works {
+  background-color: #F0F0F0;
+  margin-top: 195px;
+  padding: 237px 0 60px;
+  position: relative;
+  &__slider{
+    position: absolute;
+    top: -115px;
+    left: 0;
+    max-width: 750px;
+    padding: 0 20px;
+  }
+  &__text {
+    text-align: center;
+    margin: 29px 0 25px;
+  }
+}

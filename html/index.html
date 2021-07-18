@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pon desigin</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="../css/style.min.css" />
     <link rel="stylesheet" href="../css/top.min.css" />
@@ -102,23 +105,24 @@
             </h2>
             <dl class="news__list">
               <dt class="news__term">
-                <time class="news__time">2030.02.01</time><span class="news__type">お知らせ</span>
+                <time class="news__time">2030.02.01</time
+                ><span class="news__type">お知らせ</span>
               </dt>
               <dd class="news__text">
                 Webデザインニュースサイト｢ウェブマガジン｣に取材いただきました
               </dd>
               <dt class="news__term">
-                <time class="news__time">2030.01.25</time><span class="news__type">制作実績</span>
+                <time class="news__time">2030.01.25</time
+                ><span class="news__type">制作実績</span>
               </dt>
               <dd class="news__text">
                 Smoothiesta様のWebサイトを制作いたしました
               </dd>
               <dt class="news__term">
-                <time class="news__time">2030.01.20</time><span class="news__type">採用</span>
+                <time class="news__time">2030.01.20</time
+                ><span class="news__type">採用</span>
               </dt>
-              <dd class="news__text">
-                Webデザイナーを１名募集中です！
-              </dd>
+              <dd class="news__text">Webデザイナーを１名募集中です！</dd>
             </dl>
           </div>
         </section>
@@ -129,9 +133,58 @@
             <h2 class="top-h2">
               service<br /><span class="top-h2--sub">事業内容</span>
             </h2>
-            <div class="service__box">
-              
+
+            <div class="service__wrap">
+              <div class="service__box">
+                <div class="service__img">
+                  <img
+                    srcset="../img/service.png 335w, ../img/service@2x.png 670w"
+                    sizes="(max-width: 335px) 100vw, 670px"
+                    src="../img/service.png"
+                    alt="Webサイト制作のイメージ"
+                    loading="lazy"
+                  />
+                </div>
+                  <h3 class="service__title">Webサイト制作</h3>
+                  <p class="service__text">
+                    新規サイトはもちろん、サイトリニューアルやランディングページ制作も行っております。
+                  </p>
+              </div>
+
+              <div class="service__box">
+                <div class="service__img">
+                  <img
+                    srcset="../img/service-1.png 335w, ../img/service-1@2x.png 670w"
+                    sizes="(max-width: 335px) 100vw, 670px"
+                    src="../img/service-1.png"
+                    alt="Webサイト制作のイメージ２"
+                    loading="lazy"
+                  />
+                </div>
+                  <h3 class="service__title">Webサイト制作</h3>
+                  <p class="service__text">
+                    サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。
+                  </p>
+              </div>
+
+              <div class="service__box">
+                <div class="service__img">
+                  <img
+                    srcset="../img/service-2.png 335w, ../img/service-2@2x.png 670w"
+                    sizes="(max-width: 335px) 100vw, 670px"
+                    src="../img/service-2.png"
+                    alt="アプリ開発のイメージ"
+                    loading="lazy"
+                  />
+                </div>
+                  <h3 class="service__title">アプリ開発</h3>
+                  <p class="service__text">
+                    スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。
+                  </p>
+              </div>
+
             </div>
+
           </div>
         </section>
 
@@ -141,6 +194,18 @@
             <h2 class="top-h2">
               works<br /><span class="top-h2--sub">制作実績</span>
             </h2>
+
+            <!-- スライダー -->
+            <div class="works__slider" id="app2">
+              <div class="works__img">
+                <img srcset="../img/smoothiesta.png 750w, ../img/smoothiesta@2x.png 1500w"
+                sizes="(max-width: 750px) 100vw, 1500px" src="../img/smoothiesta.png" alt="制作実績 スムジーのサイト" />
+              </div>
+            </div>
+            <!--  -->
+
+            <p class="works__text">様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！</p>
+            <a href="#" class="btn">more</a>
           </div>
         </section>
 
@@ -150,15 +215,25 @@
             <h2 class="top-h2">
               company<br /><span class="top-h2--sub">私たちについて</span>
             </h2>
+            <p class="company__title">サイトのゴール =<br>夢を叶えること</p>
+            <p class="company__text">お客様の夢を叶えること。<br>それがWebサイトのゴールであり、<br>私たちが目指すことです。<br>だからこそちゃんと成果を出すサイトを<br>全力でお作りします。<br>お客様の笑顔を見たい。<br>夢を実現する手助けをさせてください。
+            </p>
+            <a href="#" class="btn">more</a>
           </div>
         </section>
 
         <!-- recruit -->
         <section class="recruit" id="recruit">
           <div class="content_wrapper">
+            <div class="recruit__img">
+              <!-- <img srcset="../img/you-x-ventures-X8H8vPcelPk-unsplash.png 665w, ../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png 1330w"
+              sizes="(max-width: 665px) 100vw, 1330px" src="../img/you-x-ventures-X8H8vPcelPk-unsplash.png" alt="採用情報のイメージ"> -->
+            </div>
             <h2 class="top-h2">
               recruit<br /><span class="top-h2--sub">採用情報</span>
             </h2>
+            <p class="recruit__text"></p>
+            <a href="#" class="btn">more</a>
           </div>
         </section>
 
@@ -168,10 +243,25 @@
             <h2 class="top-h2">
               contact<br /><span class="top-h2--sub">お問い合わせ</span>
             </h2>
+            <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、
+              お気軽にご相談ください。</p>
+            <a href="#" class="btn">more</a>
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#news">news</a></li>
+          <li class="footer__item"><a href="#service">service</a></li>
+          <li class="footer__item"><a href="#works">works</a></li>
+          <li class="footer__item"><a href="#company">company</a></li>
+          <li class="footer__item"><a href="#recruit">recruit</a></li>
+          <li class="footer__item">
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <small class="footer__c">&copy;PON DESIGN</small>
+      </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="../js/script.js" charset="utf-8"></script>

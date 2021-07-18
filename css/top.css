@@ -173,4 +173,49 @@
 .news__text:not(:last-child) {
   margin-bottom: 35px;
 }
+
+.service {
+  margin-top: 75px;
+}
+.service__wrap {
+  margin-top: 30px;
+}
+.service__box {
+  margin-top: 40px;
+}
+.service__img {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.service__title {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.222;
+  margin-top: 12px;
+}
+.service__text {
+  margin-top: 10px;
+}
+
+.works {
+  background-color: #F0F0F0;
+  margin-top: 195px;
+  padding: 237px 0 60px;
+  position: relative;
+}
+.works__slider {
+  position: absolute;
+  top: -115px;
+  left: 0;
+  max-width: 750px;
+  padding: 0 20px;
+}
+.works__text {
+  text-align: center;
+  margin: 29px 0 25px;
+}
 /*# sourceMappingURL=top.css.map */

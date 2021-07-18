@@ -1,0 +1,27 @@
+@use "../config" as cfg;
+.footer{
+  text-align: center;
+  height: 183px;
+  background-color: #120E19;
+  padding: 60px 30px 0;
+  &__list{
+    @include cfg.text(#fff,1.2);
+    list-style-type: none;
+    letter-spacing: 0.06em;
+    line-height: 1.25;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  &__c{
+    font-family: cfg.$ff;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #A798B7;
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
