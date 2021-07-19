@@ -1,18 +1,47 @@
 @use "../../config" as cfg;
 .works {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   margin-top: 195px;
-  padding: 237px 0 60px;
+  padding-bottom: 60px;
   position: relative;
-  &__slider{
+  &::before{
+    content: "";
+    padding-top: 41.6%;
+    display: block;
+  }
+  &__slider {
     position: absolute;
     top: -115px;
     left: 0;
-    max-width: 750px;
     padding: 0 20px;
+    width: 100%;
   }
   &__text {
     text-align: center;
     margin: 29px 0 25px;
+  }
+}
+
+// スライダー
+// 階層を１つ深く
+.works__slider {
+  // ページネーション
+  .swiper-pagination {
+    position: initial;
+    text-align: right;
+  }
+  .swiper-pagination-bullet {
+    margin: 0 4px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #fff;
+    &::after {
+      font-size: 3rem;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
