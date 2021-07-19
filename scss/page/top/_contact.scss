@@ -1,0 +1,11 @@
+@use "../../config" as cfg;
+
+.contact {
+  margin-top: 60px;
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  &__text {
+    margin: 26px 0 28px;
+    text-align: center;
+  }
+}

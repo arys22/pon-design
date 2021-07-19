@@ -136,14 +136,14 @@
 
             <div class="service__wrap">
               <div class="service__box">
-                <div class="service__img">
-                  <img
+                <div class="service__img--1 ">
+                  <!-- <img
                     srcset="../img/service.png 335w, ../img/service@2x.png 670w"
                     sizes="(max-width: 335px) 100vw, 670px"
                     src="../img/service.png"
                     alt="Webサイト制作のイメージ"
                     loading="lazy"
-                  />
+                  /> -->
                 </div>
                 <h3 class="service__title">Webサイト制作</h3>
                 <p class="service__text">
@@ -152,8 +152,8 @@
               </div>
 
               <div class="service__box">
-                <div class="service__img">
-                  <img
+                <div class="service__img--2">
+                  <!-- <img
                     srcset="
                       ../img/service-1.png    335w,
                       ../img/service-1@2x.png 670w
@@ -162,7 +162,7 @@
                     src="../img/service-1.png"
                     alt="Webサイト制作のイメージ２"
                     loading="lazy"
-                  />
+                  /> -->
                 </div>
                 <h3 class="service__title">Webサイト制作</h3>
                 <p class="service__text">
@@ -171,8 +171,8 @@
               </div>
 
               <div class="service__box">
-                <div class="service__img">
-                  <img
+                <div class="service__img--3">
+                  <!-- <img
                     srcset="
                       ../img/service-2.png    335w,
                       ../img/service-2@2x.png 670w
@@ -181,7 +181,7 @@
                     src="../img/service-2.png"
                     alt="アプリ開発のイメージ"
                     loading="lazy"
-                  />
+                  /> -->
                 </div>
                 <h3 class="service__title">アプリ開発</h3>
                 <p class="service__text">
@@ -201,44 +201,38 @@
 
             <!-- スライダー -->
             <div class="works__slider" id="app2">
-              <!-- <div class="works__img"></div> -->
-
               <swiper :options="swiperOption" class="swiper">
-
-                <swiper-slide >
+                <swiper-slide>
                   <img
-                  srcset="
-                    ../img/smoothiesta.png     750w,
-                    ../img/smoothiesta@2x.png 1500w
-                  "
-                  sizes="(max-width: 750px) 100vw, 1500px"
-                  src="../img/smoothiesta.png"
-                  alt="制作実績 スムジーのサイト"
-                />
+                    srcset="
+                      ../img/smoothiesta.png     750w,
+                      ../img/smoothiesta@2x.png 1500w
+                    "
+                    sizes="(max-width: 750px) 100vw, 1500px"
+                    src="../img/smoothiesta.png"
+                    alt="制作実績 smoothiesta"
+                  />
                 </swiper-slide>
 
-                <swiper-slide >
+                <swiper-slide>
                   <img
-                  srcset="
-                    ../img/smoothiesta.png     750w,
-                    ../img/smoothiesta@2x.png 1500w
-                  "
-                  sizes="(max-width: 750px) 100vw, 1500px"
-                  src="../img/smoothiesta.png"
-                  alt="制作実績 スムジーのサイト"
-                />
+                    srcset="
+                      ../img/web-conference.png        395w,
+                      ../img/web-conference@2x.png 790w
+                    "
+                    sizes="(max-width: 395px) 100vw, 790px"
+                    src="../img/web-conference.png"
+                    alt="制作実績 web-conference"
+                  />
                 </swiper-slide>
 
-                <swiper-slide >
+                <swiper-slide>
                   <img
-                  srcset="
-                    ../img/smoothiesta.png     750w,
-                    ../img/smoothiesta@2x.png 1500w
-                  "
-                  sizes="(max-width: 750px) 100vw, 1500px"
-                  src="../img/smoothiesta.png"
-                  alt="制作実績 スムジーのサイト"
-                />
+                    srcset="../img/tabilog.png 395w, ../img/tabilog@2x.png 790w"
+                    sizes="(max-width: 395px) 100vw, 790px"
+                    src="../img/tabilog.png"
+                    alt="制作実績 TABILOG"
+                  />
                 </swiper-slide>
 
                 <div class="swiper-button-prev" slot="button-prev"></div>
@@ -259,27 +253,29 @@
         <section class="company" id="company">
           <div class="content_wrapper">
             <h2 class="top-h2">
-              company<br /><span class="top-h2--sub">私たちについて</span>
+              company<br/><span class="top-h2--sub">私たちについて</span>
             </h2>
-            <p class="company__title">サイトのゴール =<br />夢を叶えること</p>
+            <p class="company__title first">サイトのゴール =</p>
+            <p class="company__title second ">夢を叶えること</p>
             <p class="company__text">
               お客様の夢を叶えること。<br />それがWebサイトのゴールであり、<br />私たちが目指すことです。<br />だからこそちゃんと成果を出すサイトを<br />全力でお作りします。<br />お客様の笑顔を見たい。<br />夢を実現する手助けをさせてください。
             </p>
             <a href="#" class="btn">more</a>
           </div>
+
         </section>
 
         <!-- recruit -->
         <section class="recruit" id="recruit">
-          <div class="content_wrapper">
-            <div class="recruit__img">
-              <!-- <img srcset="../img/you-x-ventures-X8H8vPcelPk-unsplash.png 665w, ../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png 1330w"
+          <div class="recruit__img">
+            <!-- <img srcset="../img/you-x-ventures-X8H8vPcelPk-unsplash.png 665w, ../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png 1330w"
               sizes="(max-width: 665px) 100vw, 1330px" src="../img/you-x-ventures-X8H8vPcelPk-unsplash.png" alt="採用情報のイメージ"> -->
             </div>
+          <div class="content_wrapper">
             <h2 class="top-h2">
               recruit<br /><span class="top-h2--sub">採用情報</span>
             </h2>
-            <p class="recruit__text"></p>
+            <p class="recruit__text">私たちと一緒に働きませんか？</p>
             <a href="#" class="btn">more</a>
           </div>
         </section>
@@ -291,7 +287,7 @@
               contact<br /><span class="top-h2--sub">お問い合わせ</span>
             </h2>
             <p class="contact__text">
-              Webサイトの制作のご依頼やお見積りなど、 お気軽にご相談ください。
+              Webサイトの制作のご依頼やお見積りなど、<br>お気軽にご相談ください。
             </p>
             <a href="#" class="btn">more</a>
           </div>
@@ -309,13 +305,15 @@
             <a href="contact.html">contact</a>
           </li>
         </ul>
-        <small class="footer__c">&copy;PON DESIGN</small>
+        <small class="footer__c">&copy; PON DESIGN</small>
       </footer>
-
     </div>
 
     <!-- Swiper library -->
-    <link href="https://cdn.jsdelivr.net/npm/swiper@5.3.6/css/swiper.min.css"rel="stylesheet"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@5.3.6/css/swiper.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@5.3.6/js/swiper.min.js"></script>
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

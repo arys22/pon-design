@@ -8,9 +8,29 @@ margin-top: 75px;
 &__box{
 margin-top: 40px;
 }
-&__img{
+&__img--1{
 max-width: 350px;
 margin: 0 auto;
+height: 210px;
+background: url(../img/service.png) no-repeat;
+background-position: center;
+background-size: cover;
+}
+&__img--2{
+max-width: 350px;
+margin: 0 auto;
+height: 210px;
+background: url(../img/service-1.png ) no-repeat;
+background-position: center;
+background-size: cover;
+}
+&__img--3{
+max-width: 350px;
+margin: 0 auto;
+height: 210px;
+background: url(../img/service-2.png) no-repeat;
+background-position: center;
+background-size: cover;
 }
 &__title{
 text-align: center;

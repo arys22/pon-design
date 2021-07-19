@@ -1,0 +1,19 @@
+@use "../../config" as cfg;
+
+.recruit{
+  margin-top: 40px;
+  padding-bottom: 50px;
+  background-color: #F7F7F7;
+  &__img{
+    background: url(../img/you-x-ventures-X8H8vPcelPk-unsplash.png)no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 60px;
+  }
+  &__text{
+    margin: 49px 0 25px;
+    text-align: center;
+  }
+}
