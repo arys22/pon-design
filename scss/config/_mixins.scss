@@ -7,3 +7,10 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+// @media screen and (min-width:  px)
+@mixin mq($bp) {
+  @media #{map-get(variables.$breakpoints, $bp)} {
+   @content;
+  }
+}

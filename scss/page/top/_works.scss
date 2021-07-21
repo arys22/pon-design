@@ -2,16 +2,19 @@
 .works {
   background-color: #f0f0f0;
   margin-top: 195px;
-  padding-bottom: 60px;
   position: relative;
-  &::before{
+  padding-bottom: 60px;
+  &::before {
     content: "";
     padding-top: 41.6%;
     display: block;
   }
+  &__wrapper {
+    padding: 0 20px;
+  }
   &__slider {
     position: absolute;
-    top: -115px;
+    top: calc(-115px - ((100vw - 375px) / 3));
     left: 0;
     padding: 0 20px;
     width: 100%;

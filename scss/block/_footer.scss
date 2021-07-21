@@ -1,27 +1,47 @@
 @use "../config" as cfg;
-.footer{
+.footer {
   text-align: center;
   height: 183px;
-  background-color: #120E19;
+  background-color: #120e19;
   padding: 60px 30px 0;
-  &__list{
-    @include cfg.text(#fff,1.2);
+  &__list {
+    @include cfg.text(#fff, 1.2);
     list-style-type: none;
     letter-spacing: 0.06em;
     line-height: 1.25;
     display: flex;
     flex-wrap: wrap;
   }
-  &__item{
-    margin-right: 20px;
+  &__item {
     margin-bottom: 20px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
-  &__c{
+  &__c {
     font-family: cfg.$ff;
     font-size: 1rem;
     font-weight: 400;
-    color: #A798B7;
+    color: #a798b7;
     display: inline-block;
     margin-top: 20px;
+  }
+}
+
+// pc表示
+@include cfg.mq(sm) {
+  .footer {
+    height: 173px;
+    &__list {
+      font-size: 1.4rem;
+      line-height: 1.071;
+      justify-content: center;
+    }
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__c {
+      margin-top: 2px;
+    }
   }
 }

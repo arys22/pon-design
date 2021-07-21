@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   &__text {
-    width: fit-content;
+    // width: 100%;
     margin-left: 13.33%;
     // position: absolute;
     // top: 227.8px;
@@ -85,5 +85,40 @@
     height: 0;
     top: 49.5px;
     opacity: 0;
+  }
+}
+
+// pc表示
+@include cfg.mq(sm) {
+  .fv {
+    background-image: url(../img/hero@2x.png);
+    justify-content: center;
+    &__text {
+      margin: 0 auto;
+      padding: 0 2%;
+    }
+    &__title {
+      font-size: 7.2rem;
+      line-height: 1.25;
+      margin-bottom: 14.9px;
+      &--s {
+        font-size: 2.4rem;
+        line-height: 1.583;
+        letter-spacing: 0.108em;
+        margin-bottom: 46.9px;
+      }
+    }
+    &__scroll {
+      &::after {
+        
+      }
+    }
+  }
+}
+
+// 改行削除 992px
+@include cfg.mq(lg) {
+  .lg {
+    display: none;
   }
 }

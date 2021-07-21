@@ -16,6 +16,9 @@ display: block;
 // news
 .news{
   margin-top: 40px;
+  &__wrapper{
+    padding: 0 20px;
+  }
   &__list{
     margin-top: 31px;
   }

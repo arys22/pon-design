@@ -10,8 +10,6 @@
   transition: 0.8s ease-in-out;
   &__wrapper {
     padding: 0 15px;
-  }
-  &__wrap {
     display: flex;
     justify-content: space-between;
     height: 44px;
@@ -27,6 +25,39 @@
 }
 
 // スクロール変化
-.header-scroll{
-  background-color: #21054D;
+.header-scroll {
+  background-color: #21054d;
+}
+
+// スマートフォン横までタブレット以上
+@include cfg.mq(sm) {
+  .header {
+    &__wrapper {
+      padding: 0 2%;
+    }
+    &__title {
+      font-size: 2rem;
+    }
+  }
+  // ナビ pc
+  .nav_pc {
+    width: 75%;
+    display: block;
+    &__list {
+      display: flex;
+      text-align: center;
+      @include cfg.text(#fff, 1.5);
+      line-height: 1;
+      letter-spacing: 0.06em;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+      flex-wrap: wrap;
+      list-style: none;
+      width:100%;
+    }
+    &__item:not(:last-child){
+      margin-right: 1.736%;
+    }
+  }
 }

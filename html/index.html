@@ -20,8 +20,7 @@
       <!-- vue -->
       <div id="app1">
         <header class="header" :class="{'header-scroll': scrollY > 0}">
-          <div class="header__wrapper">
-            <div class="header__wrap">
+            <div class="header__wrapper">
               <h1 class="header__title">pon design</h1>
 
               <!-- ハンバーガーメニューのアイコン sp-->
@@ -63,24 +62,22 @@
                   </ul>
                 </nav>
               </transition>
-            </div>
 
             <!--ナビ pc -->
-            <!-- <nav class="nav_pc pc">
+            <nav class="nav_pc pc">
                 <ul class="nav_pc__list">
-                  <li class="nav_pc__item italic">
-                    <a href="#concept">concept</a>
-                  </li>
-                  <li class="nav_pc__item italic">
-                    <a href="#service">service</a>
-                  </li>
-                  <li class="nav_pc__item italic"><a href="#works">works</a></li>
-                  <li class="nav_pc__item italic">
-                    <a href="contact.html">contact</a>
-                  </li>
+                  <li class="nav_pc__item"><a href="#news">news</a></li>
+                    <li class="nav_pc__item"><a href="#service">service</a></li>
+                    <li class="nav_pc__item"><a href="#works">works</a></li>
+                    <li class="nav_pc__item"><a href="#company">company</a></li>
+                    <li class="nav_pc__item"><a href="#recruit">recruit</a></li>
+                    <li class="nav_pc__item">
+                      <a href="contact.html">contact</a>
+                    </li>
                 </ul>
-              </nav> -->
-          </div>
+              </nav>
+
+            </div>
         </header>
       </div>
 
@@ -88,8 +85,8 @@
         <!-- fv -->
         <div class="fv">
           <div class="fv__text">
-            <p class="fv__title">web<br />design<br />specialist</p>
-            <p class="fv__title--s">お客様の夢を叶える<br />Wabサイトを制作</p>
+            <p class="fv__title">web&nbsp;<br class="sp"/>design&nbsp;<br class="lg"/>specialist</p>
+            <p class="fv__title--s">お客様の夢を叶える<br class="sp"/>Wabサイトを制作</p>
             <a href="#" class="fv__btn"> contact </a>
           </div>
           <div class="fv__scroll">
@@ -99,7 +96,7 @@
 
         <!-- news -->
         <section class="news" id="news">
-          <div class="content_wrapper">
+          <div class="news__wrapper">
             <h2 class="top-h2">
               news<br /><span class="top-h2--sub">お知らせ</span>
             </h2>
@@ -129,7 +126,7 @@
 
         <!-- service -->
         <section class="service" id="service">
-          <div class="content_wrapper">
+          <div class="service__wrapper">
             <h2 class="top-h2">
               service<br /><span class="top-h2--sub">事業内容</span>
             </h2>
@@ -194,71 +191,66 @@
 
         <!-- works -->
         <section class="works" id="works">
-          <div class="content_wrapper">
-            <h2 class="top-h2">
-              works<br /><span class="top-h2--sub">制作実績</span>
-            </h2>
-
-            <!-- スライダー -->
-            <div class="works__slider" id="app2">
-              <swiper :options="swiperOption" class="swiper">
-                <swiper-slide>
-                  <img
-                    srcset="
-                      ../img/smoothiesta.png     750w,
-                      ../img/smoothiesta@2x.png 1500w
-                    "
-                    sizes="(max-width: 750px) 100vw, 1500px"
-                    src="../img/smoothiesta.png"
-                    alt="制作実績 smoothiesta"
-                  />
-                </swiper-slide>
-
-                <swiper-slide>
-                  <img
-                    srcset="
-                      ../img/web-conference.png        395w,
-                      ../img/web-conference@2x.png 790w
-                    "
-                    sizes="(max-width: 395px) 100vw, 790px"
-                    src="../img/web-conference.png"
-                    alt="制作実績 web-conference"
-                  />
-                </swiper-slide>
-
-                <swiper-slide>
-                  <img
-                    srcset="../img/tabilog.png 395w, ../img/tabilog@2x.png 790w"
-                    sizes="(max-width: 395px) 100vw, 790px"
-                    src="../img/tabilog.png"
-                    alt="制作実績 TABILOG"
-                  />
-                </swiper-slide>
-
-                <div class="swiper-button-prev" slot="button-prev"></div>
-                <div class="swiper-button-next" slot="button-next"></div>
-              </swiper>
-              <div class="swiper-pagination" slot="pagination"></div>
+            <div class="works__wrapper">
+              <h2 class="top-h2">
+                works<br /><span class="top-h2--sub">制作実績</span>
+              </h2>
+              <!-- スライダー -->
+              <div class="works__slider" id="app2">
+                <swiper :options="swiperOption" class="swiper">
+                  <swiper-slide>
+                    <img
+                      srcset="
+                        ../img/smoothiesta.png     750w,
+                        ../img/smoothiesta@2x.png 1500w
+                      "
+                      sizes="(max-width: 750px) 100vw, 1500px"
+                      src="../img/smoothiesta.png"
+                      alt="制作実績 smoothiesta"
+                    />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img
+                      srcset="
+                        ../img/web-conference.png        395w,
+                        ../img/web-conference@2x.png 790w
+                      "
+                      sizes="(max-width: 395px) 100vw, 790px"
+                      src="../img/web-conference.png"
+                      alt="制作実績 web-conference"
+                    />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img
+                      srcset="../img/tabilog.png 395w, ../img/tabilog@2x.png 790w"
+                      sizes="(max-width: 395px) 100vw, 790px"
+                      src="../img/tabilog.png"
+                      alt="制作実績 TABILOG"
+                    />
+                  </swiper-slide>
+                  <div class="swiper-button-prev" slot="button-prev"></div>
+                  <div class="swiper-button-next" slot="button-next"></div>
+                </swiper>
+                <div class="swiper-pagination" slot="pagination"></div>
+              </div>
+              <!--  -->
+              <p class="works__text">
+                様々なジャンルのWebサイト制作が可能です。<br />ご購入やお申込み数の増加などを実現します！
+              </p>
+              <a href="#" class="btn">more</a>
             </div>
-            <!--  -->
-
-            <p class="works__text">
-              様々なジャンルのWebサイト制作が可能です。<br />ご購入やお申込み数の増加などを実現します！
-            </p>
-            <a href="#" class="btn">more</a>
-          </div>
         </section>
 
         <!-- company -->
         <section class="company" id="company">
-          <div class="content_wrapper">
+          <div class="company__wrapper">
             <h2 class="top-h2">
               company<br/><span class="top-h2--sub">私たちについて</span>
             </h2>
             <p class="company__title first">サイトのゴール =</p>
             <p class="company__title second ">夢を叶えること</p>
             <p class="company__text">
-              お客様の夢を叶えること。<br />それがWebサイトのゴールであり、<br />私たちが目指すことです。<br />だからこそちゃんと成果を出すサイトを<br />全力でお作りします。<br />お客様の笑顔を見たい。<br />夢を実現する手助けをさせてください。
+              お客様の夢を叶えること。<br />それがWebサイトのゴールであり、<br class="sp"/>私たちが目指すことです。<br />だからこそちゃんと成果を出すサイトを<br class="sp"/>全力でお作りします。<br />お客様の笑顔を見たい。<br />夢を実現する手助けをさせてください。
             </p>
             <a href="#" class="btn">more</a>
           </div>
@@ -267,11 +259,11 @@
 
         <!-- recruit -->
         <section class="recruit" id="recruit">
-          <div class="recruit__img">
-            <!-- <img srcset="../img/you-x-ventures-X8H8vPcelPk-unsplash.png 665w, ../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png 1330w"
-              sizes="(max-width: 665px) 100vw, 1330px" src="../img/you-x-ventures-X8H8vPcelPk-unsplash.png" alt="採用情報のイメージ"> -->
-            </div>
-          <div class="content_wrapper">
+          <div class="recruit__wrapper">
+            <div class="recruit__img">
+              <!-- <img srcset="../img/you-x-ventures-X8H8vPcelPk-unsplash.png 665w, ../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png 1330w"
+                sizes="(max-width: 665px) 100vw, 1330px" src="../img/you-x-ventures-X8H8vPcelPk-unsplash.png" alt="採用情報のイメージ"> -->
+              </div>
             <h2 class="top-h2">
               recruit<br /><span class="top-h2--sub">採用情報</span>
             </h2>
@@ -282,12 +274,12 @@
 
         <!-- contact -->
         <section class="contact" id="contact">
-          <div class="content_wrapper">
+          <div class="contact__wrapper">
             <h2 class="top-h2">
               contact<br /><span class="top-h2--sub">お問い合わせ</span>
             </h2>
             <p class="contact__text">
-              Webサイトの制作のご依頼やお見積りなど、<br>お気軽にご相談ください。
+              Webサイトの制作のご依頼やお見積りなど、<br class="sp"/>お気軽にご相談ください。
             </p>
             <a href="#" class="btn">more</a>
           </div>
@@ -305,7 +297,7 @@
             <a href="contact.html">contact</a>
           </li>
         </ul>
-        <small class="footer__c">&copy; PON DESIGN</small>
+        <small class="footer__c">&copy;&nbsp;PON&nbsp;DESIGN</small>
       </footer>
     </div>
 

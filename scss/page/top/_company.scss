@@ -5,6 +5,9 @@
   background: url(../img/cirlcles.svg) no-repeat;
   background-position: center;
   padding: 42px 0 86px;
+  &__wrapper{
+    padding: 0 40px;
+  }
   &__title {
     font-size: 3.2rem;
     font-weight: 600;

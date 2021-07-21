@@ -59,7 +59,28 @@ body {
 //   // overflow: hidden;
 // }
 
-/* セクションごとの左右のpadding */
-.content_wrapper {
-  padding: 0 20px;
+// spで非表示・pcで表示
+// @media screen and(max-width: 576px){
+  .pc{
+    display: none;
+  }
+  .sp{
+    display: inline;
+  }
+// }
+// スマートフォン横までタブレット以上
+@include cfg.mq(sm) {
+  body {
+    font-size: 1.5rem;
+    line-height: 1.8;
+
+    //spで表示 pcで非表示
+    // 優先度１つ上げた
+    .sp{
+      display: none;
+    }
+  }
+  .pc{
+    display: inline;
+  }
 }
