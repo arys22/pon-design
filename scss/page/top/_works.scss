@@ -1,16 +1,16 @@
 @use "../../config" as cfg;
 .works {
-  background-color: #f0f0f0;
   margin-top: 195px;
   position: relative;
   padding-bottom: 60px;
-  &::before {
-    content: "";
-    padding-top: 41.6%;
-    display: block;
-  }
   &__wrapper {
+    background-color: #f0f0f0;
     padding: 0 20px;
+    &::before {
+      content: "";
+      padding-top: 41.6%;
+      display: block;
+    }
   }
   &__slider {
     position: absolute;
@@ -54,16 +54,16 @@
 // pc表示
 @include cfg.mq(sm) {
   .works {
-    margin-top: 140px;
-    position: relative;
-    // padding-bottom: 60px;
-    &::before {
-      content: "";
-      padding-top: 41.6%;
-      display: block;
-    }
+    margin: 140px auto 0;
+    max-width: 1261px;
+    padding-bottom: 0px;
     &__wrapper {
-      padding: 0 20px;
+      // padding: 0 20px;
+      width: 66.375%;
+      margin-left: auto;
+      &::before {
+        padding-top: 0;
+      }
     }
     &__slider {
       position: absolute;

@@ -1,0 +1,23 @@
+@use "../config" as cfg;
+
+// transition
+.button-enter-active,
+.button-leave-active {
+  transition: opacity 0.8s ease-in-out;
+}
+.button-enter,
+.button-leave-to {
+  opacity: 0;
+}
+
+// pc表示
+@include cfg.mq(sm) {
+  // ボタン
+  .page-top{
+  display: block;
+  position: fixed;
+  right: 3.125%;
+  bottom: 46px;
+  z-index: 100;
+  }
+  }
