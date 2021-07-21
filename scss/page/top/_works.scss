@@ -18,6 +18,7 @@
     left: 0;
     padding: 0 20px;
     width: 100%;
+    max-width: 750px;
   }
   &__text {
     text-align: center;
@@ -45,6 +46,36 @@
     }
     &:hover {
       opacity: 0.5;
+    }
+  }
+}
+
+
+// pc表示
+@include cfg.mq(sm) {
+  .works {
+    margin-top: 140px;
+    position: relative;
+    // padding-bottom: 60px;
+    &::before {
+      content: "";
+      padding-top: 41.6%;
+      display: block;
+    }
+    &__wrapper {
+      padding: 0 20px;
+    }
+    &__slider {
+      position: absolute;
+      top: calc(-115px - ((100vw - 375px) / 3));
+      left: 0;
+      padding: 0 20px;
+      width: 100%;
+      max-width: 750px;
+    }
+    &__text {
+      text-align: center;
+      margin: 29px 0 25px;
     }
   }
 }

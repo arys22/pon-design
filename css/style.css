@@ -96,7 +96,9 @@ input, select {
 
 /*追加のリセットCSS*/
 /*boder,pading含める*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -109,7 +111,7 @@ html {
 /* img */
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
   vertical-align: bottom;
 }
 
@@ -140,7 +142,8 @@ button {
 }
 
 /* form */
-input, textarea {
+input,
+textarea {
   resize: none;
   -webkit-appearance: none;
      -moz-appearance: none;

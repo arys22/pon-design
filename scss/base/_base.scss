@@ -1,29 +1,31 @@
 @use "../config" as cfg;
 /*追加のリセットCSS*/
 /*boder,pading含める*/
-*, *::before , *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  }
+}
 /*1rem＝10px*/
 html {
   font-size: 62.5%;
-  }
+}
 /* img */
-img{
-width: 100%;
-height: auto;
-vertical-align: bottom;
-  }
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
 /* aタグ */
 a {
-text-decoration: none;
-display: inline-block;
-color: inherit;
-width: 100%;
-height: 100%;
-&:hover{
-  opacity: .8;
-  transition: opacity .3s ease-out;
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-out;
   }
 }
 /* ボタン */
@@ -34,19 +36,20 @@ button {
   outline: none;
   padding: 0;
   appearance: none;
-  }
+}
 /* form */
-input, textarea {
-  resize:none;
-  appearance:none;
-  outline:none;
-  }
+input,
+textarea {
+  resize: none;
+  appearance: none;
+  outline: none;
+}
 
 // font-family: 'Montserrat',sans-serif;
 // font-family:  "Hiragino Sans", "ヒラギノ角ゴシック",sans-serif;
 // font-family: 'Noto Sans JP', sans-serif;
 body {
-  font-family:"Hiragino Sans", "ヒラギノ角ゴシック", 'Noto Sans JP',sans-serif;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.05em;
   line-height: 1.785;
@@ -60,14 +63,13 @@ body {
 // }
 
 // spで非表示・pcで表示
-// @media screen and(max-width: 576px){
-  .pc{
-    display: none;
-  }
-  .sp{
-    display: inline;
-  }
-// }
+.pc {
+  display: none;
+}
+.sp {
+  display: inline;
+}
+
 // スマートフォン横までタブレット以上
 @include cfg.mq(sm) {
   body {
@@ -76,11 +78,11 @@ body {
 
     //spで表示 pcで非表示
     // 優先度１つ上げた
-    .sp{
+    .sp {
       display: none;
     }
   }
-  .pc{
+  .pc {
     display: inline;
   }
 }

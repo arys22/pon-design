@@ -17,3 +17,9 @@
     text-align: center;
   }
 }
+
+
+// pc表示
+@include cfg.mq(sm) {
+
+}

@@ -29,3 +29,9 @@
   width: 240px;
   margin: 0 auto;
 }
+
+
+// pc表示
+@include cfg.mq(sm) {
+
+}
