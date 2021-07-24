@@ -2,16 +2,20 @@
 
 .btn{
   display: block;
-  background: linear-gradient(to left,#250D65,#7633A4);
+  // background: linear-gradient(to left,#250D65,#7633A4);
+  background: linear-gradient(to left,#7633A4 0%,#250D65 51%,#7633A4 100%);
+  background-size: 200% auto;
+
   width: 200px;
   height: 60px;
   border-radius: 100vh;
-  transition: all 0.3s ease-out;
   text-align: center;
   line-height: 4.25;
   margin: 0 auto;
+  transition:  all 0.5s ease-out 0s;
   @include cfg.text(#fff, 1.4);
   &:hover{
-    background: linear-gradient(to right,#250D65,#7633A4);
+    // background: linear-gradient(to right,#250D65,#7633A4);
+    background-position: right center;
   }
 }

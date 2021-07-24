@@ -53,45 +53,45 @@
 
 // pc表示
 @include cfg.mq(sm) {
-
   // topページのh2 title
-.top-h2 {
-  line-height: 0.888;
-  font-size: 3.6rem;
-  &--sub {
-    font-weight: 600;
-    line-height: 2.285;
-    letter-spacing: 0.1em;
+  .top-h2 {
+    line-height: 0.888;
+    font-size: 3.6rem;
+    &--sub {
+      font-weight: 600;
+      line-height: 2.285;
+      letter-spacing: 0.1em;
+    }
   }
-}
 
-// news
-.news {
-  margin-top: 70px;
-  &__wrapper {
-    padding-left: 17.916%;
-    display: flex;
-  }
-  &__list {
-    margin: 0 0 0 3.472%;
-  }
-  &__term {
-    flex: 28.25%;
-  }
-  &__type {
-    font-size: 1.2rem;
-    margin-left: 1.388%;;
-    height: 22px;
-  }
-  &__text {
-    margin: 0 0 0 1.388%;;
-    flex: 71.75%;
-  }
-  &__row{
-    display: flex;
-    &:not(:last-child) {
-      margin-bottom: 15px;
+  // news
+  .news {
+    margin-top: 70px;
+    &__wrapper {
+      max-width: 917px;
+      margin: 0 auto;
+      display: flex;
+    }
+    &__list {
+      margin: 0 0 0 3.472%;
+    }
+    &__term {
+      flex: 28.25%;
+    }
+    &__type {
+      font-size: 1.2rem;
+      margin-left: 1.388%;
+      height: 22px;
+    }
+    &__text {
+      margin: 0 0 0 1.388%;
+      flex: 71.75%;
+    }
+    &__row {
+      display: flex;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
-  }

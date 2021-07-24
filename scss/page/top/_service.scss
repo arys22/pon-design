@@ -70,6 +70,7 @@
     &__box {
       margin-top: 0px;
       height: fit-content;
+      flex: 1;
       &:not(:last-of-type) {
         margin-right: 2.08%;
       }

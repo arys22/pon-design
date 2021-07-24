@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pon desigin | news</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link rel="stylesheet" href="../css/news.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- vue -->
+      <div id="app1">
+        <header class="header" :class="{'header-scroll': scrollY > 0}">
+          <div class="header__wrapper">
+            <p class="header__title">
+              <a href="index.html">pon design</a>
+            </p>
+
+            <!-- ハンバーガーメニューのアイコン sp-->
+            <button
+              type="button"
+              class="hamburger sp"
+              @click="ActiveBtn=!ActiveBtn"
+              :class="{'btn_line':ActiveBtn}"
+            >
+              <span
+                class="hamburger__line line1"
+                :class="{'btn_line1':ActiveBtn}"
+              ></span>
+              <span
+                class="hamburger__line line2"
+                :class="{'btn_line2':ActiveBtn}"
+              ></span
+              ><span
+                class="hamburger__line line3"
+                :class="{'btn_line3':ActiveBtn}"
+              ></span>
+            </button>
+            <!-- ナビ sp -->
+            <transition name="nav">
+              <nav
+                class="nav_sp sp"
+                v-show="ActiveBtn"
+                :class="{'nav':ActiveBtn}"
+              >
+                <ul class="nav_sp__list">
+                  <li class="nav_sp__item"><a href="news.html">news</a></li>
+                  <li class="nav_sp__item">
+                    <a href="service.html">service</a>
+                  </li>
+                  <li class="nav_sp__item"><a href="works.html">works</a></li>
+                  <li class="nav_sp__item">
+                    <a href="company.html">company</a>
+                  </li>
+                  <li class="nav_sp__item">
+                    <a href="recruit.html">recruit</a>
+                  </li>
+                  <li class="nav_sp__item">
+                    <a href="contact.html">contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </transition>
+
+            <!--ナビ pc -->
+            <nav class="nav_pc pc">
+              <ul class="nav_pc__list">
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="news.html">news</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="service.html">service</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="works.html">works</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="company.html">company</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="recruit.html">recruit</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="contact.html">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <!-- ページtopへ戻るボタン -->
+        <transition name="button">
+          <button
+            type="button"
+            class="page-top pc"
+            @click="returnTop"
+            v-show="scrollY > 500"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+              <g transform="translate(-1345 -3991)">
+                <circle
+                  cx="25"
+                  cy="25"
+                  r="25"
+                  transform="translate(1345 3991)"
+                  fill="#391e88"
+                />
+                <path
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-width="3"
+                  d="M1370.5 4009.5v15m0-17l-7 8m7-8l7 8"
+                />
+              </g>
+            </svg>
+          </button>
+        </transition>
+      </div>
+
+      <main>
+        <!-- fv -->
+        <div class="fv">
+          <h2 class="fv__title">
+            news<br />
+            <span class="fv__title--s"> お知らせ </span>
+          </h2>
+        </div>
+
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+          <ol
+            class="breadcrumb__list"
+            itemscope
+            itemtype="https://schema.org/BreadcrumbList"
+          >
+            <!-- 1つめ -->
+            <li
+              class="breadcrumb__item"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <a class="breadcrumb__link" itemprop="item" href="index.html">
+                <span itemprop="name">home</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+
+            <!-- 2つめ -->
+            <li
+              class="breadcrumb__item"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <span itemprop="name">news</span>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ol>
+        </nav>
+
+        <!-- news -->
+        <section class="news">
+          <div class="news__wrapper">
+            <!-- <dl class="news__list">
+              <div class="news__row">
+                <dt class="news__term">
+                  <time class="news__time">2030.02.01</time
+                  ><span class="news__type">お知らせ</span>
+                </dt>
+                <dd class="news__text">
+                  Webデザインニュースサイト｢ウェブマガジン｣に取材いただきました
+                </dd>
+              </div>
+              <div class="news__row">
+                <dt class="news__term">
+                  <time class="news__time">2030.01.25</time
+                  ><span class="news__type">制作実績</span>
+                </dt>
+                <dd class="news__text">
+                  Smoothiesta様のWebサイトを制作いたしました
+                </dd>
+              </div>
+              <div class="news__row">
+                <dt class="news__term">
+                  <time class="news__time">2030.01.20</time
+                  ><span class="news__type">採用</span>
+                </dt>
+                <dd class="news__text">Webデザイナーを１名募集中です！</dd>
+              </div>
+            </dl> -->
+
+            <!-- ページネーション -->
+            <div id="app3">
+              <dl class="news__list">
+                <div v-for="e in getItems" :key="e.id" class="news__row">
+                  <dt class="news__term">
+                    <time class="news__time">{{e.time}}</time
+                    ><span class="news__type">{{e.type}}</span>
+                  </dt>
+                  <dd class="news__text">{{e.text}}</dd>
+                </div>
+              </dl>
+              <paginate
+                :page-count="getPageCount"
+                :click-handler="clickCallback"
+                :container-class="'pagination'"
+                :page-class="'page-item'"
+                :page-link-class="'page-link'"
+                :active-class="'active'"
+                :next-class="'page-btn'"
+                :prev-class="'page-btn'"
+
+              >
+              </paginate>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="news.html">news</a></li>
+          <li class="footer__item"><a href="service.html">service</a></li>
+          <li class="footer__item"><a href="works.html">works</a></li>
+          <li class="footer__item"><a href="company.html">company</a></li>
+          <li class="footer__item"><a href="recruit.html">recruit</a></li>
+          <li class="footer__item">
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <small class="footer__c">&copy;&nbsp;PON&nbsp;DESIGN</small>
+      </footer>
+    </div>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- vuejs-paginate -->
+    <script src="https://unpkg.com/vuejs-paginate@2.1.0"></script>
+    <!-- js -->
+    <script src="../js/news.js" charset="utf-8"></script>
+  </body>
+</html>

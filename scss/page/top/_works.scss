@@ -1,11 +1,11 @@
 @use "../../config" as cfg;
 .works {
-  margin-top: 195px;
+  margin-top: 52%;
   position: relative;
   padding-bottom: 60px;
   &__wrapper {
     background-color: #f0f0f0;
-    padding: 0 20px;
+    padding: 0 20px 60px;
     &::before {
       content: "";
       padding-top: 41.6%;
@@ -50,7 +50,6 @@
   }
 }
 
-
 // pc表示
 @include cfg.mq(sm) {
   .works {
@@ -58,24 +57,26 @@
     max-width: 1261px;
     padding-bottom: 0px;
     &__wrapper {
-      // padding: 0 20px;
+      padding: 0 4.23% 0 24.02%;
       width: 66.375%;
       margin-left: auto;
       &::before {
-        padding-top: 0;
+        padding-top: 49.53%;
+      }
+      &::after {
+        content: "";
+        padding-top: 49.53%;
+        display: block;
       }
     }
     &__slider {
-      position: absolute;
-      top: calc(-115px - ((100vw - 375px) / 3));
-      left: 0;
-      padding: 0 20px;
-      width: 100%;
-      max-width: 750px;
+      top: 60px;
+      width: 52.08%;
+      padding: 0;
+      margin-left: 20px;
     }
     &__text {
-      text-align: center;
-      margin: 29px 0 25px;
+      margin-top: 28px;
     }
   }
 }

@@ -5,33 +5,86 @@
   background: url(../img/cirlcles.svg) no-repeat;
   background-position: center;
   padding: 42px 0 86px;
-  &__wrapper{
-    padding: 0 40px;
+  &__wrapper {
+    padding: 0 5.33%;
   }
   &__title {
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 1.5;
-    background: linear-gradient(transparent 83.4%, #f5f534 16.6%);
+    margin-top: 22px;
+    position: relative;
+    min-width: 265px;
+    z-index: 0;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 280px;
+      height: 8px;
+      background-color: #f5f534;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 3.2rem;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 240px;
+      height: 8px;
+      background-color: #f5f534;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 5px;
+      z-index: -1;
+    }
   }
   &__text {
     margin: 39px 0 25px;
   }
 }
 
-// １行目
-.first {
-  width: 280px;
-  margin:22px auto 0;
-}
-// ２行目
-.second {
-  width: 240px;
-  margin: 0 auto;
-}
-
-
 // pc表示
 @include cfg.mq(sm) {
+  .company {
+    margin: 60px auto 0;
+    max-width: 1300px;
+    background: url(../img/bg-circle.svg) no-repeat;
+    background-position: center;
+    padding: 136px 0 73px;
+    &__wrapper {
+      padding: 0;
+      background: url(../img/bg-face.png) no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &__title {
+      font-size: 4rem;
+      line-height: 0.8;
+      margin-top: 30px;
+      &::before {
+        height: 12px;
+        width: 666px;
+      }
+      &::after {
+        content: none;
+      }
+    }
+    &__text {
+      margin: 41px 0 30px;
+    }
+  }
+}
 
+/* 高解像度対応 背景*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .company {
+    &__wrapper {
+      background-image: url(../img/bg-face@2x.png);
+    }
+  }
 }

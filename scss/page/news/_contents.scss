@@ -1,0 +1,120 @@
+@use "../../config" as cfg;
+
+.news {
+  padding: 40px 0 80px;
+  &__wrapper {
+    padding: 0 19px 0 20px;
+  }
+  &__list {
+    margin-bottom: 40px;
+  }
+  &__term {
+    font-family: cfg.$ff;
+  }
+  &__time {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+  }
+  &__type {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 15px;
+    text-align: center;
+    width: 82px;
+    height: 19px;
+    background-color: #e8e8e8;
+    border-radius: 100vh;
+    display: inline-block;
+  }
+  &__text {
+    margin-top: 10px;
+    line-height: 1.928;
+  }
+  &__row:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+// paginate部分
+// ul
+.pagination {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+// li
+.page-item {
+  margin: 0 5px;
+  padding: 0;
+  display: inline-block;
+
+  background: linear-gradient(to bottom, #7633a4 0%, #250d65 51%, #7633a4 100%);
+  background-size: auto 200%;
+  transition: all 0.5s ease-out 0s;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  &:hover {
+    background-position: bottom center;
+  }
+}
+// a
+.page-link {
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  font-family: cfg.$ff;
+  font-weight: bold;
+  line-height: 2.2;
+  &:hover {
+    opacity: 1;
+  }
+}
+// アクティブ
+.active {
+  background: #f1ebf8;
+  color: #4f31a5;
+}
+// 前 次 ボタン
+.page-btn {
+  display: none;
+}
+
+@include cfg.mq(sm) {
+  // news
+  .news {
+    padding-top: 60px;
+    &__wrapper {
+      padding-left: 0;
+    }
+    &__list {
+      // max-width: 747px;
+      margin-left: 18.05%;
+    }
+    &__term {
+      display: flex;
+    }
+    &__type {
+      font-size: 1.2rem;
+      margin: 0 20px;
+      height: 22px;
+    }
+    &__text {
+      margin-top: 0;
+      line-height: 1.8;
+    }
+    &__row {
+      display: flex;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

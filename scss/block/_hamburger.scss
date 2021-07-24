@@ -38,15 +38,15 @@
 // アイコンの動き
 .btn_line1 {
   transform: translateY(6.5px) rotate(-45deg);
-  transition: 0.4s ease;
+  transition: 0.4s ease-out;
 }
 .btn_line2 {
-  transition: 0.4s ease;
+  transition: 0.4s ease-out;
   opacity: 0;
 }
 .btn_line3 {
   transform: translateY(-6.5px) rotate(45deg);
-  transition: 0.4s ease;
+  transition: 0.4s ease-out;
 }
 .btn_line {
   transform: rotateX(360deg);
@@ -83,7 +83,7 @@
 
 // navメニューの動き
 .nav-enter-active, .nav-leave-active {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-out;
 }
 .nav-enter, .nav-leave-to {
   opacity: 0;

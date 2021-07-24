@@ -1,0 +1,43 @@
+@use "../../config" as cfg;
+
+.fv {
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: #fff;
+  height: 190px;
+  padding-top: 93px;
+  text-align: center;
+  &__title {
+    @include cfg.text(#fff, 3);
+    line-height: 0.955;
+    &--s {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+// pc表示
+@include cfg.mq(sm) {
+  .fv {
+    background-image: url(../img/hero@2x.png);
+    height: 240px;
+    padding-top: 106px;
+    &__title {
+      font-size: 3.6rem;
+      line-height: 0.921;
+      &--s {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+// 高解像度対応
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fv {
+    background-image: url("../img/hero@2x.png");
+  }
+}

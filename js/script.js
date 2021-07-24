@@ -20,10 +20,19 @@ const vm1 = new Vue({
 
     // top戻る
     returnTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      // ver.1
+      // window.scrollTo({
+      //   top: 0,
+      //   behavior: "smooth",
+      // });
+
+      // ver.2
+      window.scrollTo(0, this.scrollY - 80);
+      // 0になったらストップ
+      if (this.scrollY > 0) {
+        // 再帰処理 0.01秒
+        window.setTimeout(this.returnTop, 7);
+      }
     },
   },
 });
@@ -63,3 +72,4 @@ const vm2 = new Vue({
     },
   },
 });
+

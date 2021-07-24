@@ -1,0 +1,43 @@
+@use "../config" as cfg;
+
+.breadcrumb {
+  background-color: #F7F7F7;
+  padding: 6px 0 5px 20px;
+  height: 25px;
+  &__list {
+    list-style: none;
+    line-height: 1;
+  }
+  &__item {
+    display: inline; /*横に並ぶように*/
+    @include cfg.text(#333333, 1.1);
+    font-weight: 400;
+    &:after {
+      /* >を表示*/
+      content: ">";
+      padding: 0 0.2em;
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+  &__link {
+    color: #0000ee;
+    display: initial;
+    &:hover {
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+}
+
+// pc表示
+@include cfg.mq(sm) {
+  .breadcrumb {
+    padding: 15px 0 15px 11.45%;
+    height: 45px;
+    &__item {
+      font-size: 1.2rem;
+    }
+  }
+}

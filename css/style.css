@@ -122,11 +122,11 @@ a {
   color: inherit;
   width: 100%;
   height: 100%;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 a:hover {
-  opacity: 0.8;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
+  opacity: 0.7;
 }
 
 /* ボタン */
@@ -160,6 +160,10 @@ body {
   font-weight: 300;
   width: 100%;
   height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 .pc {
@@ -244,7 +248,7 @@ body {
     display: flex;
     text-align: center;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -262,8 +266,33 @@ body {
     list-style: none;
     width: 100%;
   }
+  .nav_pc__item {
+    position: relative;
+  }
+  .nav_pc__item::after {
+    position: absolute;
+    content: "";
+    bottom: -5.5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    -webkit-transition: width 0.3s ease 0s;
+    transition: width 0.3s ease 0s;
+  }
+  .nav_pc__item:hover::after {
+    width: 100%;
+  }
   .nav_pc__item:not(:last-child) {
     margin-right: 1.736%;
+  }
+  .nav_pc__link:hover {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 685px) {
+  .nav_pc__list {
+    font-size: 1.3rem;
   }
 }
 .hamburger {
@@ -307,21 +336,21 @@ body {
 .btn_line1 {
   -webkit-transform: translateY(6.5px) rotate(-45deg);
           transform: translateY(6.5px) rotate(-45deg);
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
 
 .btn_line2 {
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
   opacity: 0;
 }
 
 .btn_line3 {
   -webkit-transform: translateY(-6.5px) rotate(45deg);
           transform: translateY(-6.5px) rotate(45deg);
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
 
 .btn_line {
@@ -362,8 +391,8 @@ body {
 }
 
 .nav-enter-active, .nav-leave-active {
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
 }
 
 .nav-enter, .nav-leave-to {
@@ -380,16 +409,17 @@ body {
 
 .btn {
   display: block;
-  background: -webkit-gradient(linear, right top, left top, from(#250D65), to(#7633A4));
-  background: linear-gradient(to left, #250D65, #7633A4);
+  background: -webkit-gradient(linear, right top, left top, from(#7633A4), color-stop(51%, #250D65), to(#7633A4));
+  background: linear-gradient(to left, #7633A4 0%, #250D65 51%, #7633A4 100%);
+  background-size: 200% auto;
   width: 200px;
   height: 60px;
   border-radius: 100vh;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
   text-align: center;
   line-height: 4.25;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
   color: #fff;
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
@@ -397,8 +427,7 @@ body {
   text-transform: uppercase;
 }
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#250D65), to(#7633A4));
-  background: linear-gradient(to right, #250D65, #7633A4);
+  background-position: right center;
 }
 
 .footer {
@@ -473,6 +502,51 @@ body {
     right: 3.125%;
     bottom: 46px;
     z-index: 100;
+  }
+}
+.breadcrumb {
+  background-color: #F7F7F7;
+  padding: 6px 0 5px 20px;
+  height: 25px;
+}
+.breadcrumb__list {
+  list-style: none;
+  line-height: 1;
+}
+.breadcrumb__item {
+  display: inline;
+  /*横に並ぶように*/
+  color: #333333;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.breadcrumb__item:after {
+  /* >を表示*/
+  content: ">";
+  padding: 0 0.2em;
+}
+.breadcrumb__item:last-child:after {
+  content: "";
+}
+.breadcrumb__link {
+  color: #0000ee;
+  display: initial;
+}
+.breadcrumb__link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+@media screen and (min-width: 576px) {
+  .breadcrumb {
+    padding: 15px 0 15px 11.45%;
+    height: 45px;
+  }
+  .breadcrumb__item {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
