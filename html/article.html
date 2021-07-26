@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pon desigin | news</title>
+    <title>pon desigin | news | article</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +13,7 @@
     />
 
     <link rel="stylesheet" href="../css/style.min.css" />
-    <link rel="stylesheet" href="../css/news.min.css" />
+    <link rel="stylesheet" href="../css/article.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -163,71 +163,126 @@
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-            <span itemprop="item" href="news.html">
-              <span itemprop="name">news</span>
-            </span>
+              <a class="breadcrumb__link" itemprop="item" href="news.html">
+                <span itemprop="name">news</span>
+              </a>
               <meta itemprop="position" content="2" />
+            </li>
+
+            <!-- 3つめ -->
+            <li
+              class="breadcrumb__item"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <span itemprop="item" href="article.html">
+                <span itemprop="name"
+                  >Webデザインニュースサイト「ウェブマガジン」に取材いただきました</span
+                >
+              </span>
+              <meta itemprop="position" content="3" />
             </li>
           </ol>
         </nav>
 
-        <!-- news -->
-        <section class="news">
-          <div class="news__wrapper">
-            <!-- <dl class="news__list">
-              <div class="news__row">
-                <dt class="news__term">
-                  <time class="news__time">2030.02.01</time
-                  ><span class="news__type">お知らせ</span>
-                </dt>
-                <dd class="news__text">
-                  Webデザインニュースサイト｢ウェブマガジン｣に取材いただきました
-                </dd>
-              </div>
-              <div class="news__row">
-                <dt class="news__term">
-                  <time class="news__time">2030.01.25</time
-                  ><span class="news__type">制作実績</span>
-                </dt>
-                <dd class="news__text">
-                  Smoothiesta様のWebサイトを制作いたしました
-                </dd>
-              </div>
-              <div class="news__row">
-                <dt class="news__term">
-                  <time class="news__time">2030.01.20</time
-                  ><span class="news__type">採用</span>
-                </dt>
-                <dd class="news__text">Webデザイナーを１名募集中です！</dd>
-              </div>
-            </dl> -->
+        <!-- contents -->
+        <section class="contents">
+          <div class="contents__wrapper">
+            <h3 class="contents__title">
+              Webデザインニュースサイト「ウェブマガジン」に取材いただきました
+            </h3>
+            <div class="contents__term">
+              <time class="contents__time">2030.02.01</time
+              ><span class="contents__type">お知らせ</span>
+            </div>
 
-            <!-- ページネーション -->
-            <div id="app3" v-cloak>
-              <dl class="news__list">
-                <div v-for="e in getItems" :key="e.id" class="news__row">
-                  <dt class="news__term">
-                    <time class="news__time">{{e.time}}</time
-                    ><span class="news__type">{{e.type}}</span>
-                  </dt>
-                  <dd class="news__text"><a href="article.html" class="text__link">{{e.text}}</a></dd>
-                </div>
-              </dl>
-              <paginate
-                :page-count="getPageCount"
-                :click-handler="clickCallback"
-                :container-class="'pagination'"
-                :page-class="'page-item'"
-                :page-link-class="'page-link'"
-                :active-class="'active'"
-                :next-class="'page-btn'"
-                :prev-class="'page-btn'"
-              >
-              </paginate>
+            <div class="contents__img">
+              <img
+                srcset="
+                  ../img/marco-xu-WNbJyh2zVlc-unsplash.png     750w,
+                  ../img/marco-xu-WNbJyh2zVlc-unsplash@2x.png 1500w
+                "
+                sizes="(max-width: 750px) 100vw, 1500px"
+                src="../img/marco-xu-WNbJyh2zVlc-unsplash.png"
+                alt="記事の写真"
+                loading="lazy"
+              />
+            </div>
+
+            <p class="contents__text">
+              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            </p>
+            <h4 class="contents__headline">大見出し</h4>
+            <p class="contents__text">
+              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            </p>
+            <h5 class="contents__subheading">小見出し</h5>
+            <p class="contents__text">
+              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            </p>
+            <p class="contents__text">
+              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+            </p>
+
+            <!-- SNS -->
+              <ul class="sns">
+                <li class="sns__item">
+                  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=174&layout=button&action=like&size=large&share=true&height=65&appId" width="158" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </li>
+                <li class="sns__item">
+                  <a
+                    href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                    class="twitter-share-button"
+                    data-size="large"
+                    data-show-count="false"
+                    >Tweet</a
+                  >
+                  <script
+                    async
+                    src="https://platform.twitter.com/widgets.js"
+                    charset="utf-8"
+                  ></script>
+                </li>
+                <li class="sns__item">
+                  <a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja"  data-hatena-bookmark-height="30" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                </li>
+                <!-- line url ?-->
+                <li class="sns__item">
+                  <div
+                    class="line-it-button"
+                    data-lang="ja"
+                    data-type="share-b"
+                    data-ver="3"
+                    data-url="https://social-plugins.line.me/ja/how_to_install"
+                    data-color="default"
+                    data-size="small"
+                    data-count="false"
+                    style="display: none" ></div>
+                  <script
+                    src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                    async="async"
+                    defer="defer"
+                  ></script>
+                </li>
+              </ul>
+
+            <!-- ページャー -->
+            <div class="pager">
+              <div class="pager__wrap">
+                <a class="pager__link" href="#"
+                  >Web Conference様のサイトを制作いたしました</a
+                >
+                <a class="pager__link" href="#"
+                  >プライバシーマーク取得のお知らせ</a
+                >
+              </div>
+              <a class="pager__link pager--b"  href="news.html">news一覧</a>
             </div>
           </div>
         </section>
 
+        <!-- contact -->
         <section class="contact">
           <div class="contact__wrapper">
             <h3 class="title">
@@ -243,6 +298,7 @@
         </section>
       </main>
 
+      <!-- footer -->
       <footer class="footer">
         <ul class="footer__list">
           <li class="footer__item"><a href="news.html">news</a></li>
@@ -262,6 +318,6 @@
     <!-- vuejs-paginate -->
     <script src="https://unpkg.com/vuejs-paginate@2.1.0"></script>
     <!-- js -->
-    <script src="../js/news.js" charset="utf-8"></script>
+    <script src="../js/script.js" charset="utf-8"></script>
   </body>
 </html>

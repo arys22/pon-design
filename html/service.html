@@ -13,7 +13,7 @@
     />
 
     <link rel="stylesheet" href="../css/style.min.css" />
-    <link rel="stylesheet" href="../css/news.min.css" />
+    <link rel="stylesheet" href="../css/service.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -131,8 +131,8 @@
         <!-- fv -->
         <div class="fv">
           <h2 class="fv__title">
-            news<br />
-            <span class="fv__title--s"> お知らせ </span>
+            service<br />
+            <span class="fv__title--s">事業内容</span>
           </h2>
         </div>
 
@@ -163,71 +163,85 @@
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-            <span itemprop="item" href="news.html">
-              <span itemprop="name">news</span>
-            </span>
+              <span itemprop="item" href="service.html">
+                <span itemprop="name">service</span>
+              </span>
               <meta itemprop="position" content="2" />
             </li>
           </ol>
         </nav>
 
-        <!-- news -->
-        <section class="news">
-          <div class="news__wrapper">
-            <!-- <dl class="news__list">
-              <div class="news__row">
-                <dt class="news__term">
-                  <time class="news__time">2030.02.01</time
-                  ><span class="news__type">お知らせ</span>
-                </dt>
-                <dd class="news__text">
-                  Webデザインニュースサイト｢ウェブマガジン｣に取材いただきました
-                </dd>
-              </div>
-              <div class="news__row">
-                <dt class="news__term">
-                  <time class="news__time">2030.01.25</time
-                  ><span class="news__type">制作実績</span>
-                </dt>
-                <dd class="news__text">
-                  Smoothiesta様のWebサイトを制作いたしました
-                </dd>
-              </div>
-              <div class="news__row">
-                <dt class="news__term">
-                  <time class="news__time">2030.01.20</time
-                  ><span class="news__type">採用</span>
-                </dt>
-                <dd class="news__text">Webデザイナーを１名募集中です！</dd>
-              </div>
-            </dl> -->
+        <!-- contents -->
+        <section class="contents">
+          <div class="contents__wrapper">
 
-            <!-- ページネーション -->
-            <div id="app3" v-cloak>
-              <dl class="news__list">
-                <div v-for="e in getItems" :key="e.id" class="news__row">
-                  <dt class="news__term">
-                    <time class="news__time">{{e.time}}</time
-                    ><span class="news__type">{{e.type}}</span>
-                  </dt>
-                  <dd class="news__text"><a href="article.html" class="text__link">{{e.text}}</a></dd>
-                </div>
-              </dl>
-              <paginate
-                :page-count="getPageCount"
-                :click-handler="clickCallback"
-                :container-class="'pagination'"
-                :page-class="'page-item'"
-                :page-link-class="'page-link'"
-                :active-class="'active'"
-                :next-class="'page-btn'"
-                :prev-class="'page-btn'"
-              >
-              </paginate>
+            <div class="contents__box">
+              <div class="contents__img">
+                <img
+                  srcset="../img/service.png 335w, ../img/service@2x.png 670w"
+                  sizes="(max-width: 335px) 100vw, 670px"
+                  src="../img/service.png"
+                  alt="Webサイト制作のイメージ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="contents__about">
+                <h3 class="contents__title">Webサイト制作</h3>
+                <p class="contents__text">
+                  新規サイトはもちろん、サイトリニューアルやランディングページ制作も承っております。<br />
+                  サイトのゴールはお客様の夢や目的を実現することです。そのためにまずはしっかりとお話をうかがい、サイトに必要な要素を洗い出します。その後、ワイヤーフレーム（サイトのレイアウト）の作成、デザインの制作、コーディングと進みます。制作の過程でお客様とのお打ち合わせを数回実施させていただき、ご要望とご意見を反映しながらサイトを制作していきます。
+                </p>
+              </div>
+            </div>
+
+            <div class="contents__box">
+              <div class="contents__img">
+                <img
+                  srcset="
+                    ../img/service-1.png    335w,
+                    ../img/service-1@2x.png 670w
+                  "
+                  sizes="(max-width: 335px) 100vw, 670px"
+                  src="../img/service-1.png"
+                  alt="Webサイト運用のイメージ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="contents__about">
+                <h3 class="contents__title">Webサイト運用</h3>
+                <p class="contents__text">
+                  サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。<br />
+                  日々の面倒な更新作業は私たちにおまかせください。テキストの修正やリンクの張り替えなどの簡単な作業から、特集ページやバナーのデザインまで可能です。<br />
+                  また、アクセス解析によるサイト改善も承っております。ご購入やお申込数などにお悩みでしたらぜひご相談ください。サイトの課題を発見し、改善案のご提案から実装までワンストップで対応いたします。
+                </p>
+
+              </div>
+            </div>
+
+            <div class="contents__box">
+              <div class="contents__img">
+                <img
+                    srcset="
+                      ../img/service-2.png    335w,
+                      ../img/service-2@2x.png 670w
+                    "
+                    sizes="(max-width: 335px) 100vw, 670px"
+                    src="../img/service-2.png"
+                    alt="アプリ開発のイメージ"
+                    loading="lazy"
+                  />
+              </div>
+              <div class="contents__about">
+                <h3 class="contents__title">アプリ開発</h3>
+                <p class="contents__text">
+                  スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。開発力のみならず、充実したユーザー体験をもたらすためのUXデザインにも自信があります。作って終わり、ではなくユーザーに愛されるUI（ユーザーインターフェース）を実現し、アプリ開発によるお客様の事業の目的を達成する推進力となることを目指します。
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
+        <!-- contact -->
         <section class="contact">
           <div class="contact__wrapper">
             <h3 class="title">
@@ -243,6 +257,7 @@
         </section>
       </main>
 
+      <!-- footer -->
       <footer class="footer">
         <ul class="footer__list">
           <li class="footer__item"><a href="news.html">news</a></li>
@@ -259,9 +274,7 @@
     </div>
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <!-- vuejs-paginate -->
-    <script src="https://unpkg.com/vuejs-paginate@2.1.0"></script>
     <!-- js -->
-    <script src="../js/news.js" charset="utf-8"></script>
+    <script src="../js/script.js" charset="utf-8"></script>
   </body>
 </html>

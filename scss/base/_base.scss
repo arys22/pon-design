@@ -46,8 +46,10 @@ textarea {
 }
 
 // font-family: 'Montserrat',sans-serif;
+// 400 700
 // font-family:  "Hiragino Sans", "ヒラギノ角ゴシック",sans-serif;
 // font-family: 'Noto Sans JP', sans-serif;
+// 300 500 700
 body {
   font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
@@ -70,6 +72,31 @@ body {
   display: inline;
 }
 
+// ﾏｽﾀｯｼｭ{{  }}表示させないように設定
+[v-cloak] {
+  display: none;
+}
+
+// ホバー時 underline
+.text__link:hover{
+  text-decoration: underline;
+}
+
+
+//  title h2 h3
+.title {
+  text-align: center;
+  @include cfg.text();
+  line-height: 0.8;
+  &--sub {
+    line-height: 2.461em;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2px;
+    display: block;
+    font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP", sans-serif;
+  }
+}
 // スマートフォン横までタブレット以上
 @include cfg.mq(sm) {
   body {
@@ -84,5 +111,16 @@ body {
   }
   .pc {
     display: inline;
+  }
+
+  //  title h2 h3
+  .title {
+    line-height: 0.888;
+    font-size: 3.6rem;
+    &--sub {
+      font-size: 1.4rem;
+      line-height: 2.285;
+      letter-spacing: 0.1em;
+    }
   }
 }

@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper">
       <!-- vue -->
-      <div id="app1">
+      <div id="app1" v-cloak>
         <header class="header" :class="{'header-scroll': scrollY > 0}">
           <div class="header__wrapper">
             <!-- サイトアドレスのリンク https://  を貼る-->
@@ -136,8 +136,8 @@
         <!-- news -->
         <section class="news" id="news">
           <div class="news__wrapper">
-            <h2 class="top-h2">
-              news<br /><span class="top-h2--sub">お知らせ</span>
+            <h2 class="title"><a href="news.html">
+              news<br /><span class="title--sub">お知らせ</span></a>
             </h2>
             <dl class="news__list">
               <div class="news__row">
@@ -146,7 +146,9 @@
                   ><span class="news__type">お知らせ</span>
                 </dt>
                 <dd class="news__text">
+                  <a class="text__link" href="article.html">
                   Webデザインニュースサイト｢ウェブマガジン｣に取材いただきました
+                  </a>
                 </dd>
               </div>
               <div class="news__row">
@@ -155,7 +157,7 @@
                   ><span class="news__type">制作実績</span>
                 </dt>
                 <dd class="news__text">
-                  Smoothiesta様のWebサイトを制作いたしました
+                  <a class="text__link" href="#">Smoothiesta様のWebサイトを制作いたしました</a>
                 </dd>
               </div>
               <div class="news__row">
@@ -163,7 +165,11 @@
                   <time class="news__time">2030.01.20</time
                   ><span class="news__type">採用</span>
                 </dt>
-                <dd class="news__text">Webデザイナーを１名募集中です！</dd>
+                <dd class="news__text">
+                  <a class="text__link" href="#">
+                    Webデザイナーを１名募集中です！
+                  </a>
+                </dd>
               </div>
             </dl>
           </div>
@@ -172,8 +178,8 @@
         <!-- service -->
         <section class="service" id="service">
           <div class="service__wrapper">
-            <h2 class="top-h2">
-              service<br /><span class="top-h2--sub">事業内容</span>
+            <h2 class="title">
+              service<br /><span class="title--sub">事業内容</span>
             </h2>
 
             <div class="service__wrap">
@@ -202,11 +208,11 @@
                     "
                     sizes="(max-width: 335px) 100vw, 670px"
                     src="../img/service-1.png"
-                    alt="Webサイト制作のイメージ２"
+                    alt="Webサイト運用のイメージ"
                     loading="lazy"
                   />
                 </div>
-                <h3 class="service__title">Webサイト制作</h3>
+                <h3 class="service__title">Webサイト運用</h3>
                 <p class="service__text">
                   サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。
                 </p>
@@ -231,15 +237,15 @@
                 </p>
               </div>
             </div>
-            <div class="pc"><a href="#" class="btn">more</a></div>
+            <div class="pc"><a href="service.html" class="btn">more</a></div>
           </div>
         </section>
 
         <!-- works -->
         <section class="works" id="works">
           <div class="works__wrapper">
-            <h2 class="top-h2">
-              works<br /><span class="top-h2--sub">制作実績</span>
+            <h2 class="title">
+              works<br /><span class="title--sub">制作実績</span>
             </h2>
 
             <!-- スライダー -->
@@ -285,15 +291,15 @@
             <p class="works__text">
               様々なジャンルのWebサイト制作が可能です。<br />ご購入やお申込み数の増加などを実現します！
             </p>
-            <a href="#" class="btn">more</a>
+            <a href="works.html" class="btn">more</a>
           </div>
         </section>
 
         <!-- company -->
         <section class="company" id="company">
           <div class="company__wrapper">
-            <h2 class="top-h2">
-              company<br /><span class="top-h2--sub">私たちについて</span>
+            <h2 class="title">
+              company<br /><span class="title--sub">私たちについて</span>
             </h2>
             <p class="company__title ">
               サイトのゴール&nbsp;=&nbsp;<br class="sp"/>夢を叶えること</span>
@@ -316,26 +322,26 @@
               sizes="(max-width: 665px) 100vw, 1330px" src="../img/you-x-ventures-X8H8vPcelPk-unsplash.png" alt="採用情報のイメージ"> -->
             </div>
             <div class="recruit__wrapper">
-            <h2 class="top-h2">
-              recruit<br /><span class="top-h2--sub">採用情報</span>
+            <h2 class="title">
+              recruit<br /><span class="title--sub">採用情報</span>
             </h2>
             <p class="recruit__text">私たちと一緒に働きませんか？</p>
-            <a href="#" class="btn">more</a>
+            <a href="recruit.html" class="btn">more</a>
           </div>
         </section>
 
         <!-- contact -->
         <section class="contact" id="contact">
           <div class="contact__wrapper">
-            <h2 class="top-h2">
-              contact<br /><span class="top-h2--sub">お問い合わせ</span>
+            <h2 class="title">
+              contact<br /><span class="title--sub">お問い合わせ</span>
             </h2>
             <p class="contact__text">
               Webサイトの制作のご依頼やお見積りなど、<br
                 class="sp"
               />お気軽にご相談ください。
             </p>
-            <a href="#" class="btn">more</a>
+            <a href="contact.html" class="btn">more</a>
           </div>
         </section>
       </main>

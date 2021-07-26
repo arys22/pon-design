@@ -196,23 +196,6 @@
     background-image: url("../img/hero@2x.png");
   }
 }
-.top-h2 {
-  text-align: center;
-  color: #391e88;
-  font-size: 3rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 0.8;
-}
-.top-h2--sub {
-  line-height: 2.461em;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-top: 2px;
-  display: block;
-}
-
 .news {
   margin-top: 40px;
 }
@@ -245,21 +228,14 @@
   margin-top: 10px;
   line-height: 1.928;
 }
+.news__link:hover {
+  text-decoration: underline;
+}
 .news__row:not(:last-child) {
   margin-bottom: 35px;
 }
 
 @media screen and (min-width: 576px) {
-  .top-h2 {
-    line-height: 0.888;
-    font-size: 3.6rem;
-  }
-  .top-h2--sub {
-    font-weight: 600;
-    line-height: 2.285;
-    letter-spacing: 0.1em;
-  }
-
   .news {
     margin-top: 70px;
   }

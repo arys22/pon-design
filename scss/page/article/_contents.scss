@@ -1,0 +1,187 @@
+@use "../../config" as cfg;
+
+.contents {
+  padding: 40px 0 78px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__title {
+    font-family: cfg.$ff;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.545;
+  }
+  &__term {
+    font-family: cfg.$ff;
+    font-weight: 400;
+    line-height: 1.615;
+    margin: 48px 0 14px 5px;
+  }
+  &__time {
+    font-size: 1.3rem;
+    letter-spacing: 0.018em;
+    margin-right: 20.6px;
+  }
+  &__type {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #e8e8e8;
+    width: 82px;
+    height: 23px;
+    border-radius: 100vh;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.09;
+  }
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__headline {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.018em;
+    line-height: 1.166;
+    padding-left: 17px;
+    margin-bottom: 17px;
+    height: 24px;
+    vertical-align: middle;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 3px;
+      left: 0;
+      width: 6px;
+      height: 18px;
+      background-color: cfg.$mc;
+      border-radius: 100vh;
+    }
+  }
+  &__subheading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.018em;
+    line-height: 1.3125;
+    margin-bottom: 18px;
+  }
+  &__text {
+    margin-bottom: 56px;
+  }
+}
+
+// sns
+.sns {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40.5px;
+  height: 30px;
+  &__item {
+    margin-right: 5px;
+  }
+  // 「LINEで送るボタン」をURLの入力
+  .line-it-button {
+    // visibility:unset !important;
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+// ページャー
+.pager {
+  &__wrap {
+    border-top: 1px solid #b8aed5;
+    border-bottom: 1px solid #b8aed5;
+    height: 113px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-bottom: 17.5px;
+  }
+  &__link {
+    text-align: center;
+    color: cfg.$mc;
+    padding: 0 10.7px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &:first-child {
+      border-right: 1px solid #b8aed5;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &--b{
+    letter-spacing: .08em;
+  }
+}
+
+// pc
+@include cfg.mq(sm) {
+  .contents {
+    padding: 70px 0 108px;
+    &__wrapper {
+      max-width: 710px;
+      margin: 0 auto;
+    }
+    &__title {
+      font-size: 3.2rem;
+      font-weight: 400;
+      line-height: 1.4375;
+    }
+    &__term {
+      margin: 10px 0 27px 0;
+    }
+    &__time {
+      line-height: 1.615;
+      margin-right: 10px;
+    }
+    &__type {
+      font-size: 1.2rem;
+      height: 22px;
+      line-height: 1.83;
+    }
+    &__headline {
+      font-size: 2.4rem;
+      line-height: 1.142;
+      padding-left: 20px;
+      margin-bottom: 24px;
+      height: 32px;
+      &::before {
+        top: 0;
+        height: 38px;
+      }
+    }
+    &__subheading {
+      font-size: 1.8rem;
+      line-height: 1.166;
+      margin-bottom: 17px;
+    }
+    &__text {
+      &:last-of-type {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  // sns
+  .sns {
+  }
+
+  // ページャー
+  .pager {
+    font-size: 1.4rem;
+    &__wrap {
+      height: 113px;
+      display: flex;
+      justify-content: space-between;
+      padding: 13px 0 11px;
+      width: 100%;
+    }
+    &__link {
+      padding: 0 31.5px;
+      }
+    }
+
+}

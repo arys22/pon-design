@@ -1,12 +1,17 @@
 @use "../config" as cfg;
 
 .breadcrumb {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 6px 0 5px 20px;
   height: 25px;
+  width: 100%;
+  overflow: hidden;
   &__list {
     list-style: none;
     line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   &__item {
     display: inline; /*横に並ぶように*/

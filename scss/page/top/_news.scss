@@ -1,19 +1,5 @@
 @use "../../config" as cfg;
 
-// topページのh2 title
-.top-h2 {
-  text-align: center;
-  @include cfg.text();
-  line-height: 0.8;
-  &--sub {
-    line-height: 2.461em;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-top: 2px;
-    display: block;
-  }
-}
-
 // news
 .news {
   margin-top: 40px;
@@ -53,17 +39,6 @@
 
 // pc表示
 @include cfg.mq(sm) {
-  // topページのh2 title
-  .top-h2 {
-    line-height: 0.888;
-    font-size: 3.6rem;
-    &--sub {
-      font-weight: 600;
-      line-height: 2.285;
-      letter-spacing: 0.1em;
-    }
-  }
-
   // news
   .news {
     margin-top: 70px;
