@@ -1,0 +1,154 @@
+@use "../../config" as cfg;
+
+.message {
+  margin-bottom: 142px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__area {
+    text-align: center;
+    background: url(../img/cirlcles.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 55px;
+    margin-bottom: 55px;
+  }
+  &__heading {
+    text-align: center;
+    color: cfg.$mc;
+    font-family: cfg.$ff;
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
+  &__title {
+    font-feature-settings: "palt";
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.281;
+    margin-top: 20px;
+    position: relative;
+    min-width: 260px;
+    z-index: 0;
+    letter-spacing: -0.072em;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 266px;
+      height: 8px;
+      background-color: #f5f534;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 3.2rem;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 240px;
+      height: 8px;
+      background-color: #f5f534;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+  &__text {
+    margin-top: 40px;
+    line-height: 1.642;
+  }
+}
+
+.ceo {
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__text {
+    line-height: 1.714;
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// pc
+@include cfg.mq(sm) {
+  .message {
+    max-width: 1300px;
+    margin: 0 auto 133px;
+    // &__wrapper {
+    //   padding: 0;
+    // }
+    &__area {
+      background: url(../img/bg-circle.svg) no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 93px 0 84px;
+      margin-bottom: 56px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url(../img/bg-face.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    &__heading {
+      font-size: 3.2rem;
+    }
+    &__title {
+      font-size: 4rem;
+      line-height: 0.8;
+      margin-top: 19px;
+      &::before {
+        height: 12px;
+        width: 666px;
+      }
+      &::after {
+        content: none;
+      }
+    }
+    &__text {
+      margin-top: 32px;
+      line-height: 1.666;
+    }
+  }
+
+  .ceo {
+    display: flex;
+    align-items: flex-start;
+    &__img {
+      max-width: 445px;
+      margin-bottom: 0;
+      margin-right: 3.472%;
+      flex: 1;
+    }
+    &__textarea{
+      max-width: 605px;
+      flex: 1;
+    }
+    &__text {
+      line-height: 1.666;
+      &:not(:last-of-type) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+/* 高解像度対応 背景*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .company {
+    &__wrapper {
+      background-image: url(../img/bg-face@2x.png);
+    }
+  }
+}

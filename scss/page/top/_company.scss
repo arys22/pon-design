@@ -4,11 +4,13 @@
   text-align: center;
   background: url(../img/cirlcles.svg) no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 42px 0 86px;
   &__wrapper {
     padding: 0 5.33%;
   }
   &__title {
+    font-feature-settings: "palt";
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 1.5;
@@ -16,6 +18,7 @@
     position: relative;
     min-width: 265px;
     z-index: 0;
+    letter-spacing: -0.072em;
     &::before {
       position: absolute;
       content: "";
@@ -55,6 +58,7 @@
     max-width: 1300px;
     background: url(../img/bg-circle.svg) no-repeat;
     background-position: center;
+    background-size: cover;
     padding: 136px 0 73px;
     &__wrapper {
       padding: 0;

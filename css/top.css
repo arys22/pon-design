@@ -228,9 +228,6 @@
   margin-top: 10px;
   line-height: 1.928;
 }
-.news__link:hover {
-  text-decoration: underline;
-}
 .news__row:not(:last-child) {
   margin-bottom: 35px;
 }
@@ -423,12 +420,15 @@
   text-align: center;
   background: url(../img/cirlcles.svg) no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 42px 0 86px;
 }
 .company__wrapper {
   padding: 0 5.33%;
 }
 .company__title {
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 1.5;
@@ -436,6 +436,7 @@
   position: relative;
   min-width: 265px;
   z-index: 0;
+  letter-spacing: -0.072em;
 }
 .company__title::before {
   position: absolute;
@@ -473,6 +474,7 @@
     max-width: 1300px;
     background: url(../img/bg-circle.svg) no-repeat;
     background-position: center;
+    background-size: cover;
     padding: 136px 0 73px;
   }
   .company__wrapper {
