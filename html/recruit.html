@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pon desigin | news</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link rel="stylesheet" href="../css/recruit.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- vue -->
+      <div id="app1" v-cloak>
+        <header class="header" :class="{'header-scroll': scrollY > 0}">
+          <div class="header__wrapper">
+            <p class="header__title">
+              <a href="index.html">pon design</a>
+            </p>
+
+            <!-- ハンバーガーメニューのアイコン sp-->
+            <button
+              type="button"
+              class="hamburger sp"
+              @click="ActiveBtn=!ActiveBtn"
+              :class="{'btn_line':ActiveBtn}"
+            >
+              <span
+                class="hamburger__line line1"
+                :class="{'btn_line1':ActiveBtn}"
+              ></span>
+              <span
+                class="hamburger__line line2"
+                :class="{'btn_line2':ActiveBtn}"
+              ></span
+              ><span
+                class="hamburger__line line3"
+                :class="{'btn_line3':ActiveBtn}"
+              ></span>
+            </button>
+            <!-- ナビ sp -->
+            <transition name="nav">
+              <nav
+                class="nav_sp sp"
+                v-show="ActiveBtn"
+                :class="{'nav':ActiveBtn}"
+              >
+                <ul class="nav_sp__list">
+                  <li class="nav_sp__item"><a href="news.html">news</a></li>
+                  <li class="nav_sp__item">
+                    <a href="service.html">service</a>
+                  </li>
+                  <li class="nav_sp__item"><a href="works.html">works</a></li>
+                  <li class="nav_sp__item">
+                    <a href="company.html">company</a>
+                  </li>
+                  <li class="nav_sp__item">
+                    <a href="recruit.html">recruit</a>
+                  </li>
+                  <li class="nav_sp__item">
+                    <a href="contact.html">contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </transition>
+
+            <!--ナビ pc -->
+            <nav class="nav_pc pc">
+              <ul class="nav_pc__list">
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="news.html">news</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="service.html">service</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="works.html">works</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="company.html">company</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="recruit.html">recruit</a>
+                </li>
+                <li class="nav_pc__item">
+                  <a class="nav_pc__link" href="contact.html">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <!-- ページtopへ戻るボタン -->
+        <transition name="button">
+          <button
+            type="button"
+            class="page-top pc"
+            @click="returnTop"
+            v-show="scrollY > 500"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+              <g transform="translate(-1345 -3991)">
+                <circle
+                  cx="25"
+                  cy="25"
+                  r="25"
+                  transform="translate(1345 3991)"
+                  fill="#391e88"
+                />
+                <path
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-width="3"
+                  d="M1370.5 4009.5v15m0-17l-7 8m7-8l7 8"
+                />
+              </g>
+            </svg>
+          </button>
+        </transition>
+      </div>
+
+      <main>
+        <!-- fv -->
+        <div class="fv">
+          <h2 class="fv__title">
+            recruit<br />
+            <span class="fv__title--s">採用情報</span>
+          </h2>
+        </div>
+
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+          <ol
+            class="breadcrumb__list"
+            itemscope
+            itemtype="https://schema.org/BreadcrumbList"
+          >
+            <!-- 1つめ -->
+            <li
+              class="breadcrumb__item"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <a class="breadcrumb__link" itemprop="item" href="index.html">
+                <span itemprop="name">home</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+
+            <!-- 2つめ -->
+            <li
+              class="breadcrumb__item"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <span itemprop="item" href="recruit.html">
+                <span itemprop="name">recruit</span>
+              </span>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ol>
+        </nav>
+
+        <!-- 薄い背景 -->
+        <div class="recruit">
+
+          <!-- message -->
+          <section class="message">
+            <div class="message__wrapper">
+              <h3 class="message__title">
+                Enjoy <br class="sp" />Creation&nbsp;for
+                <br class="sp" />Client<br />
+                <span class="message__title--sub"
+                  >楽しむ心が良いモノを生む</span
+                >
+              </h3>
+              <p class="message__text">
+                心を弾ましながら<br />
+                夢いっぱいのサイトを作ろう！<br />
+                お客様も自分もみんなが幸せになれるように
+              </p>
+            </div>
+
+            <figure class="message__frame">
+              <img
+                class="message__img"
+                srcset="
+                  ../img/pexels-ketut-subiyanto-4350210.png    1440w,
+                  ../img/pexels-ketut-subiyanto-4350210@2x.png 2880w
+                "
+                sizes="(max-width: 1440px) 100vw, 2880px"
+                src="../img/pexels-ketut-subiyanto-4350210.png"
+                alt="制作風景"
+              />
+            </figure>
+          </section>
+
+          <!-- overview  -->
+          <section class="overview">
+            <h3 class="overview__heading">募集中の職種</h3>
+            <div class="overview__box">
+              <div class="overview__wrapper">
+                <h4 class="overview__title">Webデザイナー</h4>
+
+                <dl class="overview__list">
+                  <div class="overview__row">
+                    <dt class="overview__type">雇用形態</dt>
+                    <dd class="overview__attribute font">正社員</dd>
+                  </div>
+
+                  <div class="overview__row">
+                    <dt class="overview__type">給与</dt>
+                    <dd class="overview__attribute font">
+                      400万円〜600万円（経験・能力を考慮のうえ優遇）
+                    </dd>
+                  </div>
+
+                  <div class="overview__row">
+                    <dt class="overview__type">仕事内容</dt>
+                    <dd class="overview__attribute">
+                      Webサイトの制作。サイトのデザインとコーディングを担当していただきます。
+                    </dd>
+                  </div>
+
+                  <div class="overview__row">
+                    <dt class="overview__type">勤務時間</dt>
+                    <dd class="overview__attribute font">
+                      10:00&nbsp;〜&nbsp;19:00（実働8時間、休憩1時間）
+                    </dd>
+                  </div>
+
+                  <div class="overview__row">
+                    <dt class="overview__type">応募資格</dt>
+                    <dd class="overview__attribute">
+                      <p>
+                        PhotoshopやXDなどのデザインツールの使い方を理解し、コーディングの基礎スキルがある方。<br />
+                        実務未経験でも学校や独学で学習した方を歓迎します。
+                      </p>
+                      <ul class="overview__items font">
+                        <li>・デザインやコーディングを楽しめる方</li>
+                        <li>
+                          ・常にアンテナを張って積極的にトレンドや最新の技術を取り入れる方
+                        </li>
+                        <li>
+                          ・お客様と一緒に楽しみながら高い目的を目指せる方
+                        </li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn change"
+                  >応募する</a
+                >
+                <p class="btn__text">求人サイトへ遷移します</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- movie -->
+          <section class="movie">
+            <div class="movie__wrapper">
+              <h3 class="movie__title">社内ムービー</h3>
+              <div class="movie__box">
+                <video class="movie__video" src="#パス" controls></video>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- contact -->
+        <section class="contact">
+          <div class="contact__wrapper">
+            <h3 class="title">
+              contact<br /><span class="title--sub">お問い合わせ</span>
+            </h3>
+            <p class="contact__text">
+              Webサイトの制作のご依頼やお見積りなど、<br
+                class="sp"
+              />お気軽にご相談ください。
+            </p>
+            <a href="contact.html" class="btn">more</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="news.html">news</a></li>
+          <li class="footer__item"><a href="service.html">service</a></li>
+          <li class="footer__item"><a href="works.html">works</a></li>
+          <li class="footer__item"><a href="company.html">company</a></li>
+          <li class="footer__item"><a href="recruit.html">recruit</a></li>
+          <li class="footer__item">
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <small class="footer__c">&copy;&nbsp;PON&nbsp;DESIGN</small>
+      </footer>
+    </div>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- js -->
+    <script src="../js/script.js" charset="utf-8"></script>
+  </body>
+</html>

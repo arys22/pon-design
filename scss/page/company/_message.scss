@@ -80,27 +80,27 @@
   .message {
     max-width: 1300px;
     margin: 0 auto 133px;
-    // &__wrapper {
-    //   padding: 0;
-    // }
+    &__wrapper {
+      padding: 0;
+    }
     &__area {
-      background: url(../img/bg-circle.svg) no-repeat;
-      background-position: center;
-      background-size: cover;
+      background: url(../img/bg-face.png) no-repeat,url(../img/bg-circle.svg) no-repeat;
+      background-position: center,;
+      background-size: cover,contain;
       padding: 93px 0 84px;
       margin-bottom: 56px;
       position: relative;
-      &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: url(../img/bg-face.png) no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
+      // &::after {
+      //   position: absolute;
+      //   content: "";
+      //   top: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   right: 0;
+      //   background: url(../img/bg-face.png) no-repeat;
+      //   background-position: center;
+      //   background-size: cover;
+      // }
     }
     &__heading {
       font-size: 3.2rem;

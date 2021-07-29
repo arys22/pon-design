@@ -1,0 +1,295 @@
+@charset "UTF-8";
+.fv {
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: #fff;
+  height: 190px;
+  padding-top: 93px;
+  text-align: center;
+}
+.fv__title {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.955;
+}
+.fv__title--s {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 576px) {
+  .fv {
+    background-image: url(../img/hero@2x.png);
+    height: 240px;
+    padding-top: 106px;
+  }
+  .fv__title {
+    font-size: 3.6rem;
+    line-height: 0.921;
+  }
+  .fv__title--s {
+    font-size: 1.4rem;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fv {
+    background-image: url("../img/hero@2x.png");
+  }
+}
+.recruit {
+  background: url(../img/bg-geometry.svg) repeat;
+}
+
+.message {
+  padding-top: 40px;
+  margin-bottom: 35px;
+}
+.message__wrapper {
+  padding: 0 20px;
+  text-align: center;
+}
+.message__title {
+  font-size: 3.2rem;
+  font-size: 4.8rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.166;
+  color: #391e88;
+}
+.message__title--sub {
+  letter-spacing: 0.05em;
+  line-height: 1.333;
+  font-size: 1.8rem;
+  margin-top: 12px;
+  font-weight: 300;
+  display: block;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP", sans-serif;
+}
+.message__text {
+  font-size: 1.5rem;
+  margin: 19px 0 38px;
+  line-height: 1.8;
+}
+.message__frame {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 77.33%;
+  position: relative;
+}
+.message__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .message {
+    padding-top: 116px;
+    margin-bottom: 63px;
+  }
+  .message__title {
+    line-height: 1.222;
+    font-size: 7.2rem;
+    letter-spacing: 0.05em;
+  }
+  .message__title--sub {
+    font-size: 3.2rem;
+    line-height: 1.343;
+    margin-top: 8px;
+  }
+  .message__text {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    margin: 34px 0 38px;
+    line-height: 1.75;
+  }
+  .message__frame {
+    padding-bottom: 54.09%;
+  }
+}
+.overview {
+  margin-bottom: 75px;
+}
+.overview__heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.333;
+  text-align: center;
+  color: #391e88;
+  margin-bottom: 27px;
+}
+.overview__box {
+  margin: 0 auto;
+  padding: 28px 0 31px;
+  width: 89.33%;
+  max-width: 1110px;
+  background-color: #ffffff;
+  border: 1px solid #b8aed5;
+  border-radius: 5px;
+}
+.overview__wrapper {
+  padding: 0 20px 0 25px;
+}
+.overview__title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3125;
+  text-align: center;
+  color: #391e88;
+  text-transform: capitalize;
+}
+.overview__list {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  line-height: 1.6428;
+}
+.overview__row {
+  border-bottom: 1px solid #dddddd;
+}
+.overview__row:not(:last-of-type) {
+  margin-bottom: 17.5px;
+}
+.overview__type {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.overview__attribute {
+  margin-bottom: 18.5px;
+}
+.overview__items {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.btn__text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 576px) {
+  .overview {
+    margin-bottom: 133px;
+  }
+  .overview__heading {
+    font-size: 3.2rem;
+    margin-bottom: 36px;
+  }
+  .overview__box {
+    margin: 0 auto;
+    padding: 57px 0 58px;
+  }
+  .overview__wrapper {
+    padding: 0 6.597%;
+  }
+  .overview__title {
+    font-size: 2.4rem;
+    color: #333333;
+  }
+  .overview__list {
+    margin-top: 45px;
+  }
+  .overview__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .overview__row:not(:last-of-type) {
+    margin-bottom: 30.5px;
+  }
+  .overview__type {
+    font-weight: 600;
+    margin: 0 0 28.5px 21px;
+    -webkit-box-flex: 18.53%;
+        -ms-flex: 18.53%;
+            flex: 18.53%;
+  }
+  .overview__attribute {
+    -webkit-box-flex: 81.47%;
+        -ms-flex: 81.47%;
+            flex: 81.47%;
+    margin-bottom: 28.5px;
+  }
+
+  .change {
+    width: 220px;
+    font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP", sans-serif;
+    font-size: 1.5rem;
+    line-height: 4;
+  }
+}
+.movie {
+  padding-bottom: 80px;
+}
+.movie__wrapper {
+  padding: 0 20px;
+}
+.movie__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 27px;
+  text-align: center;
+  color: #391e88;
+}
+.movie__box {
+  width: 100%;
+}
+.movie__video {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .movie {
+    padding-bottom: 110px;
+    margin: 0 auto;
+    max-width: 1110px;
+  }
+  .movie__title {
+    font-size: 3.2rem;
+    margin-bottom: 36px;
+  }
+}
+.contact {
+  height: 334px;
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
+.contact__text {
+  margin: 26px 0 28px;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .title {
+    font-size: 3.4rem;
+    letter-spacing: 0.018em;
+    line-height: 1.529;
+  }
+  .title--sub {
+    letter-spacing: 0.05em;
+  }
+
+  .contact {
+    height: 361px;
+    padding: 80px 0 79px;
+  }
+  .contact__text {
+    margin: 30px 0 29px;
+    line-height: 2.133;
+  }
+}
+/*# sourceMappingURL=recruit.css.map */

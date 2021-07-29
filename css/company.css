@@ -120,24 +120,16 @@
     max-width: 1300px;
     margin: 0 auto 133px;
   }
+  .message__wrapper {
+    padding: 0;
+  }
   .message__area {
-    background: url(../img/bg-circle.svg) no-repeat;
+    background: url(../img/bg-face.png) no-repeat, url(../img/bg-circle.svg) no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover, contain;
     padding: 93px 0 84px;
     margin-bottom: 56px;
     position: relative;
-  }
-  .message__area::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(../img/bg-face.png) no-repeat;
-    background-position: center;
-    background-size: cover;
   }
   .message__heading {
     font-size: 3.2rem;
@@ -245,7 +237,6 @@
 .gmap__link:hover {
   text-decoration: underline;
   opacity: 1;
-  color: #1e0076;
 }
 
 @media screen and (min-width: 576px) {

@@ -1,0 +1,119 @@
+@use "../../config" as cfg;
+
+.overview {
+  margin-bottom: 75px;
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.333;
+    text-align: center;
+    color: cfg.$mc;
+    margin-bottom: 27px;
+  }
+  &__box {
+    margin: 0 auto;
+    padding: 28px 0 31px;
+    width: 89.33%;
+    max-width: 1110px;
+    background-color: #ffffff;
+    border: 1px solid #b8aed5;
+    border-radius: 5px;
+  }
+  &__wrapper {
+    padding: 0 20px 0 25px;
+  }
+  &__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: cfg.$ff;
+    line-height: 1.3125;
+    text-align: center;
+    color: cfg.$mc;
+    text-transform: capitalize;
+  }
+
+  &__list {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    line-height: 1.6428;
+  }
+  &__row {
+    border-bottom: 1px solid #dddddd;
+    &:not(:last-of-type) {
+      margin-bottom: 17.5px;
+    }
+  }
+  &__type {
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  &__attribute {
+    margin-bottom: 18.5px;
+  }
+  &__items {
+    list-style: none;
+    margin-top: 15px;
+  }
+}
+// 字体変更
+.font {
+  font-family: cfg.$ff;
+  font-weight: 400;
+}
+
+.btn__text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+// pc
+@include cfg.mq(sm) {
+  .overview {
+    margin-bottom: 133px;
+    &__heading {
+      font-size: 3.2rem;
+      margin-bottom: 36px;
+    }
+    &__box {
+      margin: 0 auto;
+      padding: 57px 0 58px;
+    }
+    &__wrapper {
+      padding: 0 6.597%;
+    }
+    &__title {
+      font-size: 2.4rem;
+      color: #333333;
+    }
+
+    &__list {
+      margin-top: 45px;
+      // font-size: 1.5rem;
+    }
+    &__row {
+      display: flex;
+      &:not(:last-of-type) {
+        margin-bottom: 30.5px;
+      }
+    }
+    &__type {
+      font-weight: 600;
+      margin: 0 0 28.5px 21px;
+      flex: 18.53%;
+    }
+    &__attribute {
+      flex: 81.47%;
+      margin-bottom: 28.5px;
+    }
+  }
+
+  // ボタンの微妙な変更
+  .change {
+    width: 220px;
+    font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP",
+      sans-serif;
+    font-size: 1.5rem;
+    line-height: 4;
+  }
+}

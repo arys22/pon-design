@@ -1,0 +1,79 @@
+@use "../../config" as cfg;
+// 背景
+.recruit{
+  background: url(../img/bg-geometry.svg) repeat;
+}
+
+.message {
+  padding-top: 40px;
+  margin-bottom: 35px;
+  &__wrapper {
+    padding: 0 20px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 3.2rem;
+    font-size: 4.8rem;
+    font-weight: bold;
+    font-family: cfg.$ff;
+    // text-transform: capitalize;
+    letter-spacing: 0.01em;
+    line-height: 1.166;
+    color: cfg.$mc;
+    &--sub {
+      letter-spacing: 0.05em;
+      line-height: 1.333;
+      font-size: 1.8rem;
+      margin-top: 12px;
+      font-weight: 300;
+      display: block;
+      font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Noto Sans JP",
+        sans-serif;
+    }
+  }
+  &__text {
+    font-size: 1.5rem;
+    margin: 19px 0 38px;
+    line-height: 1.8;
+  }
+  &__frame {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 77.33%;
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+// pc
+@include cfg.mq(sm) {
+  .message {
+    padding-top: 116px;
+    margin-bottom:  63px;
+
+    &__title {
+      line-height: 1.222;
+      font-size: 7.2rem;
+      letter-spacing: 0.05em;
+      &--sub {
+        font-size: 3.2rem;
+        line-height: 1.343;
+        margin-top: 8px;
+      }
+    }
+    &__text {
+      font-size: 1.6rem;
+      font-family: cfg.$ff;
+      font-weight: normal;
+      margin: 34px 0 38px;
+      line-height: 1.75;
+    }
+    &__frame {
+      padding-bottom: 54.09%;
+    }
+  }
+}
