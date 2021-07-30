@@ -1,0 +1,203 @@
+@use "../../config" as cfg;
+
+.form {
+  padding: 37px 0 40px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__text {
+    line-height: 1.642;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  &__box {
+    background-color: #f7f7f7;
+    padding: 27px 30px;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.133;
+  }
+  &__required {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2.25;
+    color: cfg.$mc;
+  }
+  &__tel {
+    margin-left: 17px;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  &__radio {
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 2.461;
+    margin: 13px 0 28px;
+  }
+  &__item:not(:last-of-type) {
+    margin-bottom: 11px;
+  }
+  &__label {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-left: 28px;
+  }
+
+  /* inputのradio枠の設定 */
+  &__input--radio {
+    display: none;
+    /* 選択時に重ねた円の透明を解除 */
+    &:checked + .form__radio-mark:after {
+      opacity: 1;
+    }
+  }
+  /* 常に表示する枠線の円 */
+  &__radio-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px; /* 大きさ */
+    width: 22px; /* 大きさ */
+    border: solid 1px #707070; /* 線 */
+    background-color: #fdfdfd;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    // box-sizing: border-box;
+    /* 選択時に重ねる円 */
+    &:after {
+      content: "";
+      position: absolute;
+      background: #333; /* 色 */
+      border-radius: 50%;
+      top: 6px;
+      bottom: 6px;
+      left: 6px;
+      right: 6px;
+      opacity: 0; /* 透明にしておく */
+    }
+  }
+
+  // input枠
+  &__input {
+    &--area {
+      width: 100%;
+      max-width: 300px;
+      height: 40px;
+      border: 1px solid #afafaf;
+      border-radius: 5px;
+      background-color: #ffffff;
+      margin: 13px 0 27px;
+      padding: 0.7em 1em;
+      &:nth-of-type(4) {
+        max-width: 200px;
+      }
+    }
+    // textarea
+    &--textarea {
+      max-width: 601px;
+      height: 255px;
+      resize: none;
+    }
+  }
+  // select
+  &__select {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+// *必須の間隔
+.space-1 {
+  margin-left: 21px;
+}
+.space-2 {
+  margin-left: 14px;
+}
+.space-3 {
+  margin-left: 38px;
+}
+.space-4 {
+  margin-left: 81px;
+}
+
+// pc
+@include cfg.mq(sm) {
+  .form {
+    padding: 67px 0 70px;
+    &__text {
+      line-height: 2;
+      margin-bottom: 38px;
+      font-size: 1.6rem;
+    }
+    &__box {
+      padding: 87px 6.25% 90px;
+    }
+    &__title {
+      font-size: 1.6rem;
+      line-height: 2;
+    }
+
+    &__radio {
+      font-size: 1.4rem;
+      line-height: 2.285;
+      margin: 14px 0 16px;
+    }
+
+    &__item {
+      display: inline-block;
+      margin-bottom: 11px;
+      &:not(:last-of-type) {
+        margin-right: 3.472%;
+      }
+    }
+    &__label {
+      padding-left: 23px;
+    }
+
+    /* inputのradio枠の設定 */
+    &__input--radio {
+      display: none;
+      /* 選択時に重ねた円の透明を解除 */
+      &:checked + .form__radio-mark:after {
+        opacity: 1;
+      }
+    }
+    /* 常に表示する枠線の円 */
+    &__radio-mark {
+      position: absolute;
+      top: -1.3px;
+      left: 0;
+      height: 22px; /* 大きさ */
+      width: 22px; /* 大きさ */
+      border: solid 1px #707070; /* 線 */
+      background-color: #fdfdfd;
+      border-radius: 50%;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+      // box-sizing: border-box;
+      /* 選択時に重ねる円 */
+      &:after {
+        content: "";
+        position: absolute;
+        background: #333; /* 色 */
+        border-radius: 50%;
+        top: 6px;
+        bottom: 6px;
+        left: 6px;
+        right: 6px;
+        opacity: 0; /* 透明にしておく */
+      }
+    }
+
+    // input枠
+    &__input--area {
+      margin-top: 8px;
+    }
+  }
+}
