@@ -50,6 +50,7 @@ const vm3 = new Vue({
     ],
     parPage: 20,
     currentPage: 1,
+    top:0,
   },
   // ダミーデータ生成
   created: function () {
@@ -62,11 +63,19 @@ const vm3 = new Vue({
       });
     }
   },
+  mounted () {//要素の情報を取得
+    const rect = this.$refs.news.getBoundingClientRect();
+    // 最上部からの距離
+    this.top = rect.top + window.pageYOffset - 100;
+    console.log(this.top);
+    },
   methods: {
     // クリック
     // Number(pageNum) 文字列を数値に変換
     clickCallback: function (pageNum) {
       this.currentPage = Number(pageNum);
+
+      window.scrollTo({left:0,top:this.top,behavior: 'smooth'});
     },
   },
   computed: {

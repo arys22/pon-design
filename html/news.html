@@ -204,7 +204,7 @@
 
             <!-- ページネーション -->
             <div id="app3" v-cloak>
-              <dl class="news__list">
+              <dl class="news__list" ref="news">
                 <div v-for="e in getItems" :key="e.id" class="news__row">
                   <dt class="news__term">
                     <time class="news__time">{{e.time}}</time
