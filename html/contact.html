@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pon desigin | news</title>
+    <title>pon desigin | contact</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -163,16 +167,21 @@
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-              <span itemprop="item" href="contact.html">
+              <a
+                class="breadcrumb__link--current"
+                aria-current="page"
+                itemprop="item"
+                href="contact.html"
+              >
                 <span itemprop="name">contact</span>
-              </span>
+              </a>
               <meta itemprop="position" content="2" />
             </li>
           </ol>
         </nav>
 
         <!-- form -->
-        <section class="form">
+        <div class="form">
           <div class="form__wrapper">
             <p class="form__text">
               Webサイトの制作のご依頼やお見積りなど、<br
@@ -294,11 +303,12 @@
                 >
               </p>
               <input
-              class="form__input--area"
-              type="tel"
-              name="tel"
-              id="tel"
-              autocomplete="tel" />
+                class="form__input--area"
+                type="tel"
+                name="tel"
+                id="tel"
+                autocomplete="tel"
+              />
               <!-- お問い合わせ内容 -->
               <p class="form__title">
                 <label for="content"
@@ -308,7 +318,7 @@
                 >
               </p>
               <textarea
-              class="form__input--area form__input--textarea"
+                class="form__input--area form__input--textarea"
                 name="content"
                 id="content"
                 cols="30"
@@ -317,7 +327,7 @@
               ></textarea>
               <!-- select -->
               <p class="form__title">
-                <label for="research "
+                <label for="research"
                   >PON DESIGNをどちらでお知りになりましたか？<span
                     class="form__required space-4"
                     >*必須</span
@@ -325,8 +335,14 @@
                 >
               </p>
 
-              <select class="form__input--area form__select" name="research" id="research" required>
-                <option hidden>選択してください</option>
+              <select
+                class="form__input--area form__select"
+                name="research"
+                id="research"
+                size="1"
+                required
+              >
+                <option value='' hidden>選択してください</option>
                 <option value="Google/Yahoo">Google/Yahoo検索</option>
                 <option value="SNS">SNS</option>
                 <option value="ブログ">ブログ</option>
@@ -337,7 +353,7 @@
               <input class="btn" type="submit" value="応募する" />
             </form>
           </div>
-        </section>
+        </div>
       </main>
 
       <!-- footer -->
@@ -358,6 +374,6 @@
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <!-- js -->
-    <script src="../js/script.js" charset="utf-8"></script>
+    <script src="../js/script.min.js"></script>
   </body>
 </html>

@@ -43,14 +43,15 @@
 .contents {
   padding: 40px 0 78px;
 }
-.contents__wrapper {
-  padding: 0 20px;
-}
 .contents__title {
   font-family: "Montserrat", sans-serif;
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 1.545;
+  padding: 0 20px;
+}
+.contents__wrapper {
+  padding: 0 20px;
 }
 .contents__term {
   font-family: "Montserrat", sans-serif;
@@ -167,9 +168,7 @@
 @media screen and (min-width: 576px) {
   .contents {
     padding: 70px 0 108px;
-  }
-  .contents__wrapper {
-    max-width: 710px;
+    max-width: 790px;
     margin: 0 auto;
   }
   .contents__title {
@@ -228,6 +227,7 @@
   }
 }
 .contact {
+  height: 334px;
   background-color: #f7f7f7;
   padding: 60px 0;
 }
@@ -247,6 +247,7 @@
   }
 
   .contact {
+    height: 361px;
     padding: 80px 0 79px;
   }
   .contact__text {

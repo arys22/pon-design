@@ -36,6 +36,10 @@
   }
   .swiper-pagination-bullet {
     margin: 0 4px;
+    background: #C0C0C0;
+    &-active{
+      background: cfg.$mc;
+    }
   }
 
   .swiper-button-prev,

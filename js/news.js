@@ -67,7 +67,7 @@ const vm3 = new Vue({
     const rect = this.$refs.news.getBoundingClientRect();
     // 最上部からの距離
     this.top = rect.top + window.pageYOffset - 100;
-    console.log(this.top);
+    // console.log(this.top);
     },
   methods: {
     // クリック

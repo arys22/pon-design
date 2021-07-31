@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pon desigin | news | article</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -137,7 +141,7 @@
         </div>
 
         <!-- パンくずリスト -->
-        <nav class="breadcrumb">
+        <nav aria-label="パンくずリスト" class="breadcrumb">
           <ol
             class="breadcrumb__list"
             itemscope
@@ -176,24 +180,30 @@
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-              <span itemprop="item" href="article.html">
+              <a
+                class="breadcrumb__link--current"
+                aria-current="page"
+                itemprop="item"
+                href="article.html"
+              >
                 <span itemprop="name"
                   >Webデザインニュースサイト「ウェブマガジン」に取材いただきました</span
                 >
-              </span>
+              </a>
               <meta itemprop="position" content="3" />
             </li>
           </ol>
         </nav>
 
         <!-- contents -->
-        <section class="contents">
+        <article class="contents">
+          <h3 class="contents__title">
+            Webデザインニュースサイト「ウェブマガジン」に取材いただきました
+          </h3>
           <div class="contents__wrapper">
-            <h3 class="contents__title">
-              Webデザインニュースサイト「ウェブマガジン」に取材いただきました
-            </h3>
             <div class="contents__term">
-              <time class="contents__time">2030.02.01</time
+              <time datetime="2030-02-01" class="contents__time"
+                >2030.02.01</time
               ><span class="contents__type">お知らせ</span>
             </div>
 
@@ -213,59 +223,87 @@
             <p class="contents__text">
               テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
             </p>
-            <h4 class="contents__headline">大見出し</h4>
-            <p class="contents__text">
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-            </p>
-            <h5 class="contents__subheading">小見出し</h5>
-            <p class="contents__text">
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-            </p>
-            <p class="contents__text">
-              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-            </p>
-
+            <section>
+              <h4 class="contents__headline">大見出し</h4>
+              <p class="contents__text">
+                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+              </p>
+              <section>
+                <h5 class="contents__subheading">小見出し</h5>
+                <p class="contents__text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </p>
+                <p class="contents__text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </p>
+              </section>
+            </section>
             <!-- SNS -->
-              <ul class="sns">
-                <li class="sns__item">
-                  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=174&layout=button&action=like&size=large&share=true&height=65&appId" width="158" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                </li>
-                <li class="sns__item">
-                  <a
-                    href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                    class="twitter-share-button"
-                    data-size="large"
-                    data-show-count="false"
-                    >Tweet</a
-                  >
-                  <script
-                    async
-                    src="https://platform.twitter.com/widgets.js"
-                    charset="utf-8"
-                  ></script>
-                </li>
-                <li class="sns__item">
-                  <a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja"  data-hatena-bookmark-height="30" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-                </li>
-                <!-- line url ?-->
-                <li class="sns__item">
-                  <div
-                    class="line-it-button"
-                    data-lang="ja"
-                    data-type="share-b"
-                    data-ver="3"
-                    data-url="https://social-plugins.line.me/ja/how_to_install"
-                    data-color="default"
-                    data-size="small"
-                    data-count="false"
-                    style="display: none" ></div>
-                  <script
-                    src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
-                    async="async"
-                    defer="defer"
-                  ></script>
-                </li>
-              </ul>
+            <ul class="sns">
+              <li class="sns__item">
+                <iframe
+                  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=174&layout=button&action=like&size=large&share=true&height=65&appId"
+                  width="158"
+                  height="30"
+                  style="border: none; overflow: hidden"
+                  allow="autoplay; clipboard-write; encrypted-media;fullscreen;picture-in-picture; web-share"
+                ></iframe>
+              </li>
+              <li class="sns__item">
+                <a
+                  href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                  class="twitter-share-button"
+                  data-size="large"
+                  data-show-count="false"
+                  >Tweet</a
+                >
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+
+                ></script>
+              </li>
+              <li class="sns__item">
+                <a
+                  href="https://b.hatena.ne.jp/entry/"
+                  class="hatena-bookmark-button"
+                  data-hatena-bookmark-layout="basic-label"
+                  data-hatena-bookmark-lang="ja"
+                  data-hatena-bookmark-height="30"
+                  title="このエントリーをはてなブックマークに追加"
+                  ><img
+                    src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png"
+                    alt="このエントリーをはてなブックマークに追加"
+                    width="20"
+                    height="20"
+                    style="border: none"
+                /></a>
+                <script
+                  src="https://b.st-hatena.com/js/bookmark_button.js"
+
+                  async="async"
+                ></script>
+              </li>
+              <!-- line url ?-->
+              <li class="sns__item">
+                <div
+                  class="line-it-button"
+                  data-lang="ja"
+                  data-type="share-b"
+                  data-ver="3"
+                  data-url="https://social-plugins.line.me/ja/how_to_install"
+                  data-color="default"
+                  data-size="small"
+                  data-count="false"
+                  style="display: none"
+                ></div>
+                <script
+                  src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                  async="async"
+                  defer="defer"
+                ></script>
+              </li>
+            </ul>
 
             <!-- ページャー -->
             <div class="pager">
@@ -277,24 +315,22 @@
                   >プライバシーマーク取得のお知らせ</a
                 >
               </div>
-              <a class="pager__link pager--b"  href="news.html">news一覧</a>
+              <a class="pager__link pager--b" href="news.html">news一覧</a>
             </div>
           </div>
-        </section>
-
+        </article>
+        
         <!-- contact -->
         <section class="contact">
-          <div class="contact__wrapper">
-            <h3 class="title">
-              contact<br /><span class="title--sub">お問い合わせ</span>
-            </h3>
-            <p class="contact__text">
-              Webサイトの制作のご依頼やお見積りなど、<br
-                class="sp"
-              />お気軽にご相談ください。
-            </p>
-            <a href="contact.html" class="btn">more</a>
-          </div>
+          <h3 class="title">
+            contact<br /><span class="title--sub">お問い合わせ</span>
+          </h3>
+          <p class="contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="sp"
+            />お気軽にご相談ください。
+          </p>
+          <a href="contact.html" class="btn">more</a>
         </section>
       </main>
 
@@ -318,6 +354,6 @@
     <!-- vuejs-paginate -->
     <script src="https://unpkg.com/vuejs-paginate@2.1.0"></script>
     <!-- js -->
-    <script src="../js/script.js" charset="utf-8"></script>
+    <script src="../js/script.min.js" ></script>
   </body>
 </html>

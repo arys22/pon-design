@@ -9,6 +9,7 @@
   &__list {
     list-style: none;
     line-height: 1;
+    // ... 3点リーダ
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -28,10 +29,15 @@
   }
   &__link {
     color: #0000ee;
-    display: initial;
+    display: inline;
     &:hover {
       text-decoration: underline;
       opacity: 1;
+    }
+    &--current {
+      color: #333;
+      pointer-events: none;
+      display: inline;
     }
   }
 }

@@ -2,14 +2,15 @@
 
 .contents {
   padding: 40px 0 78px;
-  &__wrapper {
-    padding: 0 20px;
-  }
   &__title {
     font-family: cfg.$ff;
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 1.545;
+    padding: 0 20px;
+  }
+  &__wrapper {
+    padding: 0 20px;
   }
   &__term {
     font-family: cfg.$ff;
@@ -108,12 +109,12 @@
     &:first-child {
       border-right: 1px solid #b8aed5;
     }
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
-  &--b{
-    letter-spacing: .08em;
+  &--b {
+    letter-spacing: 0.08em;
   }
 }
 
@@ -121,10 +122,10 @@
 @include cfg.mq(sm) {
   .contents {
     padding: 70px 0 108px;
-    &__wrapper {
-      max-width: 710px;
-      margin: 0 auto;
-    }
+    max-width: 790px;
+    margin: 0 auto;
+    // &__wrapper {
+    // }
     &__title {
       font-size: 3.2rem;
       font-weight: 400;
@@ -166,8 +167,8 @@
   }
 
   // sns
-  .sns {
-  }
+  // .sns {
+  // }
 
   // ページャー
   .pager {
@@ -181,7 +182,6 @@
     }
     &__link {
       padding: 0 31.5px;
-      }
     }
-
+  }
 }

@@ -1,7 +1,7 @@
 @use "../../config" as cfg;
 
 .contact {
-  margin-top: 60px;
+  height: 334px;
   background-color: #f7f7f7;
   padding: 60px 0;
   &__text {
@@ -12,8 +12,17 @@
 
 // pc表示
 @include cfg.mq(sm) {
+  .title {
+    font-size: 3.4rem;
+    letter-spacing: 0.018em;
+    line-height: 1.529;
+    &--sub {
+      letter-spacing: 0.05em;
+    }
+  }
+
   .contact {
-    margin-top: 100px;
+    height: 361px;
     padding: 80px 0 79px;
     &__text {
       margin: 30px 0 29px;

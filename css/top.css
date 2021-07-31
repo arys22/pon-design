@@ -8,6 +8,7 @@
   color: #fff;
   position: relative;
   height: 100vh;
+  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +287,6 @@
 .service__img {
   max-width: 350px;
   margin: 0 auto;
-  height: 210px;
 }
 .service__title {
   text-align: center;
@@ -372,6 +372,10 @@
 }
 .works__slider .swiper-pagination-bullet {
   margin: 0 4px;
+  background: #C0C0C0;
+}
+.works__slider .swiper-pagination-bullet-active {
+  background: #391e88;
 }
 .works__slider .swiper-button-prev,
 .works__slider .swiper-button-next {
@@ -506,11 +510,11 @@
   }
 }
 .recruit {
-  margin-top: 40px;
+  margin: 40px 0 60px;
 }
 .recruit__wrapper {
   padding: 60px 5.33% 50px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 .recruit__img {
   background: url(../img/you-x-ventures-X8H8vPcelPk-unsplash.png) no-repeat;
@@ -527,7 +531,7 @@
 @media screen and (min-width: 576px) {
   .recruit {
     max-width: 1100px;
-    margin: 65px auto 0;
+    margin: 65px auto 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,7 +567,7 @@
   }
 }
 .contact {
-  margin-top: 60px;
+  height: 334px;
   background-color: #f7f7f7;
   padding: 60px 0;
 }
@@ -573,8 +577,17 @@
 }
 
 @media screen and (min-width: 576px) {
+  .title {
+    font-size: 3.4rem;
+    letter-spacing: 0.018em;
+    line-height: 1.529;
+  }
+  .title--sub {
+    letter-spacing: 0.05em;
+  }
+
   .contact {
-    margin-top: 100px;
+    height: 361px;
     padding: 80px 0 79px;
   }
   .contact__text {

@@ -250,15 +250,8 @@ body {
   text-transform: uppercase;
   line-height: 1.222;
   letter-spacing: 0.018em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0.45em 0;
+  white-space: nowrap;
 }
 
 .header-scroll {
@@ -288,7 +281,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
-    letter-spacing: 0.06em;
+    letter-spacing: 0;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -326,6 +319,7 @@ body {
 @media screen and (min-width: 685px) {
   .nav_pc__list {
     font-size: 1.5rem;
+    letter-spacing: 0.06em;
   }
 }
 .hamburger {
@@ -571,11 +565,16 @@ body {
 }
 .breadcrumb__link {
   color: #0000ee;
-  display: initial;
+  display: inline;
 }
 .breadcrumb__link:hover {
   text-decoration: underline;
   opacity: 1;
+}
+.breadcrumb__link--current {
+  color: #333;
+  pointer-events: none;
+  display: inline;
 }
 
 @media screen and (min-width: 576px) {

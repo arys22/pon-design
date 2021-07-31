@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pon desigin | news</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -163,9 +167,9 @@
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-            <span itemprop="item" href="news.html">
+            <a class="breadcrumb__link--current" aria-current="page" itemprop="item" href="news.html">
               <span itemprop="name">news</span>
-            </span>
+            </a>
               <meta itemprop="position" content="2" />
             </li>
           </ol>
@@ -229,7 +233,6 @@
         </section>
 
         <section class="contact">
-          <div class="contact__wrapper">
             <h3 class="title">
               contact<br /><span class="title--sub">お問い合わせ</span>
             </h3>
@@ -239,7 +242,6 @@
               />お気軽にご相談ください。
             </p>
             <a href="contact.html" class="btn">more</a>
-          </div>
         </section>
       </main>
 
@@ -262,6 +264,6 @@
     <!-- vuejs-paginate -->
     <script src="https://unpkg.com/vuejs-paginate@2.1.0"></script>
     <!-- js -->
-    <script src="../js/news.js" charset="utf-8"></script>
+    <script src="../js/news.min.js" charset="utf-8"></script>
   </body>
 </html>

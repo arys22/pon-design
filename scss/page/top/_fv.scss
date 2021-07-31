@@ -10,6 +10,7 @@
   color: #fff;
   position: relative;
   height: 100vh;
+  min-height: 400px;
   display: flex;
   align-items: center;
   &__text {
@@ -110,7 +111,7 @@
     }
     &__scroll {
       height: 90px;
-      &::after{
+      &::after {
         animation: move-pc 1.4s ease-in-out infinite;
       }
     }
@@ -121,7 +122,7 @@
       top: 0;
       opacity: 0;
     }
-    70%{
+    70% {
       height: 56px;
       opacity: 1;
     }
@@ -143,6 +144,6 @@
 // 高解像度対応
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fv {
-      background-image: url("../img/hero@2x.png");
-    }
+    background-image: url("../img/hero@2x.png");
   }
+}

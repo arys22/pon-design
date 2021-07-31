@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pon desigin</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +27,7 @@
         <header class="header" :class="{'header-scroll': scrollY > 0}">
           <div class="header__wrapper">
             <!-- サイトアドレスのリンク https://  を貼る-->
-            <h1 class="header__title"><a href="#">pon design</a></h1>
+            <h1 class="header__title"><a href="#">pon&nbsp;design</a></h1>
 
             <!-- ハンバーガーメニューのアイコン sp-->
             <button
@@ -155,7 +159,7 @@
             <dl class="news__list">
               <div class="news__row">
                 <dt class="news__term">
-                  <time class="news__time">2030.02.01</time
+                  <time datetime="2030-02-01" class="news__time">2030.02.01</time
                   ><span class="news__type">お知らせ</span>
                 </dt>
                 <dd class="news__text">
@@ -166,7 +170,7 @@
               </div>
               <div class="news__row">
                 <dt class="news__term">
-                  <time class="news__time">2030.01.25</time
+                  <time datetime="2030-01-25" class="news__time">2030.01.25</time
                   ><span class="news__type">制作実績</span>
                 </dt>
                 <dd class="news__text">
@@ -177,7 +181,7 @@
               </div>
               <div class="news__row">
                 <dt class="news__term">
-                  <time class="news__time">2030.01.20</time
+                  <time datetime="2030-01-20" class="news__time">2030.01.20</time
                   ><span class="news__type">採用</span>
                 </dt>
                 <dd class="news__text">
@@ -200,16 +204,13 @@
             <div class="service__wrap">
               <div class="service__box">
                 <figure class="service__img">
-                    <img
-                      srcset="
-                        ../img/service.png    335w,
-                        ../img/service@2x.png 670w
-                      "
-                      sizes="(max-width: 335px) 100vw, 670px"
-                      src="../img/service.png"
-                      alt="Webサイト制作のイメージ"
-                      loading="lazy"
-                    />
+                  <img
+                    srcset="../img/service.png 335w, ../img/service@2x.png 670w"
+                    sizes="(max-width: 335px) 100vw, 670px"
+                    src="../img/service.png"
+                    alt="Webサイト制作のイメージ"
+                    loading="lazy"
+                  />
                 </figure>
                 <h3 class="service__title">Webサイト制作</h3>
                 <p class="service__text">
@@ -219,16 +220,16 @@
 
               <div class="service__box">
                 <figure class="service__img">
-                    <img
-                      srcset="
-                        ../img/service-1.png    335w,
-                        ../img/service-1@2x.png 670w
-                      "
-                      sizes="(max-width: 335px) 100vw, 670px"
-                      src="../img/service-1.png"
-                      alt="Webサイト運用のイメージ"
-                      loading="lazy"
-                    />
+                  <img
+                    srcset="
+                      ../img/service-1.png    335w,
+                      ../img/service-1@2x.png 670w
+                    "
+                    sizes="(max-width: 335px) 100vw, 670px"
+                    src="../img/service-1.png"
+                    alt="Webサイト運用のイメージ"
+                    loading="lazy"
+                  />
                 </figure>
                 <h3 class="service__title">Webサイト運用</h3>
                 <p class="service__text">
@@ -238,16 +239,16 @@
 
               <div class="service__box">
                 <figure class="service__img">
-                    <img
-                      srcset="
-                        ../img/service-2.png    335w,
-                        ../img/service-2@2x.png 670w
-                      "
-                      sizes="(max-width: 335px) 100vw, 670px"
-                      src="../img/service-2.png"
-                      alt="アプリ開発のイメージ"
-                      loading="lazy"
-                    />
+                  <img
+                    srcset="
+                      ../img/service-2.png    335w,
+                      ../img/service-2@2x.png 670w
+                    "
+                    sizes="(max-width: 335px) 100vw, 670px"
+                    src="../img/service-2.png"
+                    alt="アプリ開発のイメージ"
+                    loading="lazy"
+                  />
                 </figure>
                 <h3 class="service__title">アプリ開発</h3>
                 <p class="service__text">
@@ -270,40 +271,43 @@
             <div class="works__slider" id="app2">
               <swiper :options="swiperOption" class="swiper">
                 <swiper-slide>
-                <figure>
-                  <img
-                    srcset="
-                      ../img/smoothiesta.png     750w,
-                      ../img/smoothiesta@2x.png 1500w
-                    "
-                    sizes="(max-width: 750px) 100vw, 1500px"
-                    src="../img/smoothiesta.png"
-                    alt="smoothiesta様"
-                  />
-                </figure>
+                  <figure>
+                    <img
+                      srcset="
+                        ../img/smoothiesta.png     750w,
+                        ../img/smoothiesta@2x.png 1500w
+                      "
+                      sizes="(max-width: 750px) 100vw, 1500px"
+                      src="../img/smoothiesta.png"
+                      alt="smoothiesta様"
+                    />
+                  </figure>
                 </swiper-slide>
                 <swiper-slide>
-                <figure>
-                  <img
-                    srcset="
-                      ../img/web-conference.png    350w,
-                      ../img/web-conference@2x.png 700w
-                    "
-                    sizes="(max-width: 350px) 100vw, 700px"
-                    src="../img/web-conference.png"
-                    alt="web-conference様"
-                  />
-                </figure>
+                  <figure>
+                    <img
+                      srcset="
+                        ../img/web-conference.png    350w,
+                        ../img/web-conference@2x.png 700w
+                      "
+                      sizes="(max-width: 350px) 100vw, 700px"
+                      src="../img/web-conference.png"
+                      alt="web-conference様"
+                    />
+                  </figure>
                 </swiper-slide>
                 <swiper-slide>
-                <figure>
-                <img
-                    srcset="../img/tabilog.png 350w, ../img/tabilog@2x.png 700w"
-                    sizes="(max-width: 350px) 100vw, 700px"
-                    src="../img/tabilog.png"
-                    alt="TABILOG様"
-                  />
-                </figure>
+                  <figure>
+                    <img
+                      srcset="
+                        ../img/tabilog.png    350w,
+                        ../img/tabilog@2x.png 700w
+                      "
+                      sizes="(max-width: 350px) 100vw, 700px"
+                      src="../img/tabilog.png"
+                      alt="TABILOG様"
+                    />
+                  </figure>
                 </swiper-slide>
 
                 <div class="swiper-button-prev" slot="button-prev"></div>
@@ -326,7 +330,9 @@
             <h2 class="title">
               company<br /><span class="title--sub">私たちについて</span>
             </h2>
-            <p class="company__title">サイトのゴール&nbsp;=&nbsp;<br class="sp"/>夢を叶えること</p>
+            <p class="company__title">
+              サイトのゴール&nbsp;=&nbsp;<br class="sp" />夢を叶えること
+            </p>
             <p class="company__text">
               お客様の夢を叶えること。<br />それがWebサイトのゴールであり、<br
                 class="sp"
@@ -358,17 +364,15 @@
 
         <!-- contact -->
         <section class="contact" id="contact">
-          <div class="contact__wrapper">
-            <h2 class="title">
-              contact<br /><span class="title--sub">お問い合わせ</span>
-            </h2>
-            <p class="contact__text">
-              Webサイトの制作のご依頼やお見積りなど、<br
-                class="sp"
-              />お気軽にご相談ください。
-            </p>
-            <a href="contact.html" class="btn">more</a>
-          </div>
+          <h2 class="title">
+            contact<br /><span class="title--sub">お問い合わせ</span>
+          </h2>
+          <p class="contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="sp"
+            />お気軽にご相談ください。
+          </p>
+          <a href="contact.html" class="btn">more</a>
         </section>
       </main>
 
@@ -398,6 +402,6 @@
     <!-- vue-awesome-swiper -->
     <script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper"></script>
     <!-- js -->
-    <script src="../js/script.js" charset="utf-8"></script>
+    <script src="../js/top.min.js" charset="utf-8"></script>
   </body>
 </html>

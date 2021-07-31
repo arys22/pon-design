@@ -43,17 +43,10 @@
 }
 .message {
   margin-bottom: 142px;
-}
-.message__wrapper {
-  padding: 0 20px;
-}
-.message__area {
-  text-align: center;
-  background: url(../img/cirlcles.svg) no-repeat;
-  background-position: center;
-  background-size: cover;
   padding-top: 55px;
-  margin-bottom: 55px;
+  background: url(../img/cirlcles.svg) no-repeat;
+  background-position: top;
+  background-size: contain;
 }
 .message__heading {
   text-align: center;
@@ -61,6 +54,13 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
+}
+.message__wrapper {
+  padding: 0 20px;
+}
+.message__area {
+  text-align: center;
+  margin-bottom: 55px;
 }
 .message__title {
   -webkit-font-feature-settings: "palt";
@@ -105,6 +105,9 @@
   line-height: 1.642;
 }
 
+.ceo {
+  background: #ffffff;
+}
 .ceo__img {
   margin-bottom: 30px;
 }
@@ -119,20 +122,20 @@
   .message {
     max-width: 1300px;
     margin: 0 auto 133px;
+    padding-top: 93px;
+    background: url(../img/bg-face.png) no-repeat, url(../img/bg-circle.svg) no-repeat;
+    background-position: 50% 35px, top;
+    background-size: auto, contain;
+  }
+  .message__heading {
+    font-size: 3.2rem;
   }
   .message__wrapper {
     padding: 0;
   }
   .message__area {
-    background: url(../img/bg-face.png) no-repeat, url(../img/bg-circle.svg) no-repeat;
-    background-position: center;
-    background-size: cover, contain;
-    padding: 93px 0 84px;
+    padding-bottom: 84px;
     margin-bottom: 56px;
-    position: relative;
-  }
-  .message__heading {
-    font-size: 3.2rem;
   }
   .message__title {
     font-size: 4rem;
@@ -260,7 +263,6 @@
   }
   .overview__type {
     font-weight: 600;
-    margin-bottom: 28.5px;
     margin: 0 0 28.5px 30px;
     -webkit-box-flex: 18.53%;
         -ms-flex: 18.53%;

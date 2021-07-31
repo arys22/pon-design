@@ -102,6 +102,7 @@
   }
 }
 .contact {
+  height: 334px;
   background-color: #f7f7f7;
   padding: 60px 0;
 }
@@ -121,6 +122,7 @@
   }
 
   .contact {
+    height: 361px;
     padding: 80px 0 79px;
   }
   .contact__text {

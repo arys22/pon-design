@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pon desigin | news</title>
+    <title>pon desigin | service</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -163,9 +167,9 @@
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-              <span itemprop="item" href="service.html">
+              <a class="breadcrumb__link--current" aria-current="page" itemprop="item" href="service.html">
                 <span itemprop="name">service</span>
-              </span>
+              </a>
               <meta itemprop="position" content="2" />
             </li>
           </ol>
@@ -243,7 +247,6 @@
 
         <!-- contact -->
         <section class="contact">
-          <div class="contact__wrapper">
             <h3 class="title">
               contact<br /><span class="title--sub">お問い合わせ</span>
             </h3>
@@ -253,7 +256,6 @@
               />お気軽にご相談ください。
             </p>
             <a href="contact.html" class="btn">more</a>
-          </div>
         </section>
       </main>
 
@@ -275,6 +277,6 @@
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <!-- js -->
-    <script src="../js/script.js" charset="utf-8"></script>
+    <script src="../js/script.min.js" charset="utf-8"></script>
   </body>
 </html>

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pon desigin | news</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -163,9 +167,14 @@
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-              <span itemprop="item" href="company.html">
+              <a
+                class="breadcrumb__link--current"
+                aria-current="page"
+                itemprop="item"
+                href="company.html"
+              >
                 <span itemprop="name">company</span>
-              </span>
+              </a>
               <meta itemprop="position" content="2" />
             </li>
           </ol>
@@ -173,10 +182,9 @@
 
         <!-- message -->
         <section class="message">
+          <h3 class="message__heading">メッセージ</h3>
           <div class="message__wrapper">
             <div class="message__area">
-              <h3 class="message__heading">メッセージ</h3>
-
               <p class="message__title">
                 サイトのゴール&nbsp;=&nbsp;<br class="sp" />夢を叶えること
               </p>
@@ -190,8 +198,12 @@
             </div>
             <div class="ceo">
               <figure class="ceo__img">
-                <img srcset="../img/CEO.png 445w, ../img/CEO@2x.png 890w"
-                sizes="(max-width: 445px) 100vw, 890px"  src="../img/CEO.png" alt="代表取締役社長 猫山ポン太郎">
+                <img
+                  srcset="../img/CEO.png 445w, ../img/CEO@2x.png 890w"
+                  sizes="(max-width: 445px) 100vw, 890px"
+                  src="../img/CEO.png"
+                  alt="代表取締役社長 猫山ポン太郎"
+                />
               </figure>
               <div class="ceo__textarea">
                 <p class="ceo__text">
@@ -200,59 +212,44 @@
                 <p class="ceo__text">
                   テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
                 </p>
-                <P class="ceo__text">代表取締役社長 猫山ポン太郎</P>
+                <p class="ceo__text">代表取締役社長 猫山ポン太郎</p>
               </div>
             </div>
           </div>
         </section>
 
         <!-- overview  -->
-        <section class="overview ">
+        <section class="overview">
+          <!-- 上のmessage__headingと同じ -->
+          <h3 class="message__heading">会社概要</h3>
           <div class="overview__wrapper">
-            <!-- 上のmessage__headingと同じ -->
-            <h3 class="message__heading">会社概要</h3>
-
             <dl class="overview__list">
               <div class="overview__row">
-                <dt class="overview__type">
-                  社名
-                </dt>
+                <dt class="overview__type">社名</dt>
                 <dd class="overview__attribute font">
                   株式会社PON&nbsp;DESIGN
                 </dd>
               </div>
 
               <div class="overview__row">
-                <dt class="overview__type">
-                  設立
-                </dt>
+                <dt class="overview__type">設立</dt>
                 <dd class="overview__attribute font">
-                  <time>2020.01.10</time>
+                  <time datetime="2020-01-10">2020.01.10</time>
                 </dd>
               </div>
 
               <div class="overview__row">
-                <dt class="overview__type">
-                  代表取締役
-                </dt>
-                <dd class="overview__attribute">
-                  猫山ポン太郎
-                </dd>
+                <dt class="overview__type">代表取締役</dt>
+                <dd class="overview__attribute">猫山ポン太郎</dd>
               </div>
 
               <div class="overview__row">
-                <dt class="overview__type">
-                  資本金
-                </dt>
-                <dd class="overview__attribute">
-                  1,000,000円
-                </dd>
+                <dt class="overview__type">資本金</dt>
+                <dd class="overview__attribute">1,000,000円</dd>
               </div>
 
               <div class="overview__row">
-                <dt class="overview__type">
-                  所在位置
-                </dt>
+                <dt class="overview__type">所在位置</dt>
                 <dd class="overview__attribute">
                   〒555-5555&nbsp;東京都&nbsp;千代田区&nbsp;ポンビルディング&nbsp;606
                 </dd>
@@ -260,25 +257,37 @@
             </dl>
 
             <div class="gmap">
-              <iframe class="gmap__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278534024016!2d139.76493074974536!3d35.68124053748376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbfb155a21%3A0x9f422542275585d9!2z44CSMTAwLTAwMDUg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Li444Gu5YaF77yR5LiB55uu77yZIEpSIOadseS6rOmnhQ!5e0!3m2!1sja!2sjp!4v1627420662628!5m2!1sja!2sjp" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe
+                class="gmap__frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278534024016!2d139.76493074974536!3d35.68124053748376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbfb155a21%3A0x9f422542275585d9!2z44CSMTAwLTAwMDUg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Li444Gu5YaF77yR5LiB55uu77yZIEpSIOadseS6rOmnhQ!5e0!3m2!1sja!2sjp!4v1627420662628!5m2!1sja!2sjp"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
-            <p class="gmap__text"><a class="gmap__link" target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/9sNqKV5ReUQnpTT56">Google mapで見る</a></p>
+            <p class="gmap__text">
+              <a
+                class="gmap__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://goo.gl/maps/9sNqKV5ReUQnpTT56"
+                >Google mapで見る</a
+              >
+            </p>
           </div>
         </section>
 
         <!-- contact -->
         <section class="contact">
-          <div class="contact__wrapper">
-            <h3 class="title">
-              contact<br /><span class="title--sub">お問い合わせ</span>
-            </h3>
-            <p class="contact__text">
-              Webサイトの制作のご依頼やお見積りなど、<br
-                class="sp"
-              />お気軽にご相談ください。
-            </p>
-            <a href="contact.html" class="btn">more</a>
-          </div>
+          <h3 class="title">
+            contact<br /><span class="title--sub">お問い合わせ</span>
+          </h3>
+          <p class="contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="sp"
+            />お気軽にご相談ください。
+          </p>
+          <a href="contact.html" class="btn">more</a>
         </section>
       </main>
 
@@ -300,6 +309,6 @@
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <!-- js -->
-    <script src="../js/script.js" charset="utf-8"></script>
+    <script src="../js/script.min.js"></script>
   </body>
 </html>
