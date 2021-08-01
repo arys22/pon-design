@@ -87,9 +87,11 @@ body {
 .title {
   text-align: center;
   @include cfg.text();
-  line-height: 0.8;
+  // line-height: 0.8;
+  line-height: 1.233;
   &--sub {
-    line-height: 2.461em;
+    // line-height: 2.461;
+    line-height: 1.3076;
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 2px;

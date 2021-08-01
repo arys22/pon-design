@@ -126,13 +126,10 @@
 @media screen and (min-width: 576px) {
   .fv {
     background-image: url(../img/hero@2x.png);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .fv__text {
     margin: 0 auto;
-    padding: 0 2%;
+    text-align: center;
   }
   .fv__title {
     font-size: 7.2rem;
@@ -144,6 +141,9 @@
     line-height: 1.583;
     letter-spacing: 0.108em;
     margin-bottom: 46.9px;
+  }
+  .fv__btn {
+    margin: 0 auto;
   }
   .fv__scroll {
     height: 90px;
@@ -187,11 +187,6 @@
     }
   }
 }
-@media screen and (min-width: 992px) {
-  .lg {
-    display: none;
-  }
-}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fv {
     background-image: url("../img/hero@2x.png");
@@ -204,7 +199,12 @@
   padding: 0 20px;
 }
 .news__list {
-  margin-top: 31px;
+  margin-top: 23px;
+}
+.news__row {
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  letter-spacing: 0;
 }
 .news__term {
   font-family: "Montserrat", sans-serif;
@@ -226,11 +226,11 @@
   display: inline-block;
 }
 .news__text {
-  margin-top: 10px;
+  margin-top: 0.7px;
   line-height: 1.928;
 }
 .news__row:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 576px) {
@@ -273,7 +273,7 @@
   }
 }
 .service {
-  margin-top: 75px;
+  margin-top: 72px;
 }
 .service__wrapper {
   padding: 0 20px;
@@ -282,7 +282,7 @@
   margin-top: 30px;
 }
 .service__box {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .service__img {
   max-width: 350px;
@@ -295,7 +295,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.222;
+  line-height: 1.333;
   margin-top: 12px;
 }
 .service__text {
@@ -340,9 +340,8 @@
   }
 }
 .works {
-  margin-top: 52%;
+  margin-top: 56%;
   position: relative;
-  padding-bottom: 60px;
 }
 .works__wrapper {
   background-color: #f0f0f0;
@@ -350,7 +349,7 @@
 }
 .works__wrapper::before {
   content: "";
-  padding-top: 41.6%;
+  padding-top: 42.9%;
   display: block;
 }
 .works__slider {

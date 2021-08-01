@@ -189,10 +189,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 0.8;
+  line-height: 1.233;
 }
 .title--sub {
-  line-height: 2.461em;
+  line-height: 1.3076;
   font-size: 1.3rem;
   font-weight: 600;
   margin-top: 2px;

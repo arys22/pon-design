@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="【お客様の夢を叶えるWabサイトを制作】pon desiginは、サイト制作・webページ制作を主におこなっている東京都のwebデザイン会社のホームページです。新規サイトはもちろん、サイトリニューアルやランディングページ制作も行っております。"
+    />
+    <meta
+      name="keywords"
+      content="webサイト制作,webデザイン,webサイト運用,アプリ開発,pon desigin"
+    />
     <title>pon desigin | news</title>
     <!-- ファビコン -->
     <link rel="icon" href="../img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -167,16 +175,21 @@
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-            <a class="breadcrumb__link--current" aria-current="page" itemprop="item" href="news.html">
-              <span itemprop="name">news</span>
-            </a>
+              <a
+                class="breadcrumb__link--current"
+                aria-current="page"
+                itemprop="item"
+                href="news.html"
+              >
+                <span itemprop="name">news</span>
+              </a>
               <meta itemprop="position" content="2" />
             </li>
           </ol>
         </nav>
 
         <!-- news -->
-        <section class="news">
+        <div class="news">
           <div class="news__wrapper">
             <!-- <dl class="news__list">
               <div class="news__row">
@@ -211,10 +224,12 @@
               <dl class="news__list" ref="news">
                 <div v-for="e in getItems" :key="e.id" class="news__row">
                   <dt class="news__term">
-                    <time class="news__time">{{e.time}}</time
+                    <span class="news__time">{{e.time}}</span
                     ><span class="news__type">{{e.type}}</span>
                   </dt>
-                  <dd class="news__text"><a href="article.html" class="text__link">{{e.text}}</a></dd>
+                  <dd class="news__text">
+                    <a href="article.html" class="text__link">{{e.text}}</a>
+                  </dd>
                 </div>
               </dl>
               <paginate
@@ -230,18 +245,18 @@
               </paginate>
             </div>
           </div>
-        </section>
+        </div>
 
         <section class="contact">
-            <h3 class="title">
-              contact<br /><span class="title--sub">お問い合わせ</span>
-            </h3>
-            <p class="contact__text">
-              Webサイトの制作のご依頼やお見積りなど、<br
-                class="sp"
-              />お気軽にご相談ください。
-            </p>
-            <a href="contact.html" class="btn">more</a>
+          <h3 class="title">
+            contact<br /><span class="title--sub">お問い合わせ</span>
+          </h3>
+          <p class="contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="sp"
+            />お気軽にご相談ください。
+          </p>
+          <a href="contact.html" class="btn">more</a>
         </section>
       </main>
 
@@ -264,6 +279,6 @@
     <!-- vuejs-paginate -->
     <script src="https://unpkg.com/vuejs-paginate@2.1.0"></script>
     <!-- js -->
-    <script src="../js/news.min.js" charset="utf-8"></script>
+    <script src="../js/news.min.js"></script>
   </body>
 </html>
