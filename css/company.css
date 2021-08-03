@@ -182,11 +182,14 @@
   .ceo__text:not(:last-of-type) {
     margin-bottom: 25px;
   }
+
+  /* 高解像度対応 背景*/
 }
-/* 高解像度対応 背景*/
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .company__wrapper {
-    background-image: url(../img/bg-face@2x.png);
+@media screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 576px) and (min-resolution: 192dpi) {
+  .message {
+    background: url(../img/bg-face@2x.png) no-repeat, url(../img/bg-circle.svg) no-repeat;
+    background-position: 50% 35px, top;
+    background-size: 1300px, contain;
   }
 }
 .overview {

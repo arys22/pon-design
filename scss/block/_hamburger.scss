@@ -10,6 +10,8 @@
   z-index: 99;
   transition: 0.3s ease-out;
   margin: auto 0;
+  // IE11対策
+  margin-left: auto;
   &:hover {
     opacity: 0.8;
   }

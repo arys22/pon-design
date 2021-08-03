@@ -43,11 +43,12 @@
     }
   }
 }
-
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .recruit {
     &__img {
-      background-image: url(../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png);
+      background: url(../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png);
+      background-position: top;
+      background-size: cover;
     }
   }
 }

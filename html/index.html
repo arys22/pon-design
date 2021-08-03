@@ -26,13 +26,14 @@
 
     <link rel="stylesheet" href="../css/style.min.css" />
     <link rel="stylesheet" href="../css/top.min.css" />
+
   </head>
 
   <body>
     <div class="wrapper">
       <!-- vue -->
       <div id="app1" v-cloak>
-        <header class="header" :class="{'header-scroll': scrollY > 0}">
+        <header class="header" :class=" {'header-scroll':headerChange}">
           <div class="header__wrapper">
             <!-- サイトアドレスのリンク https://  を貼る-->
             <h1 class="header__title"><a href="#">pon&nbsp;design</a></h1>
@@ -125,14 +126,14 @@
                   r="25"
                   transform="translate(1345 3991)"
                   fill="#391e88"
-                />
+                ></circle>
                 <path
                   fill="none"
                   stroke="#fff"
                   stroke-linecap="round"
                   stroke-width="3"
                   d="M1370.5 4009.5v15m0-17l-7 8m7-8l7 8"
-                />
+                ></path>
               </g>
             </svg>
           </button>
@@ -159,12 +160,10 @@
         </div>
 
         <!-- news -->
-        <section class="news" id="news">
+        <section class="news">
           <div class="news__wrapper">
             <h2 class="title">
-              <a href="news.html">
-                news<br /><span class="title--sub">お知らせ</span></a
-              >
+              news<br /><span class="title--sub">お知らせ</span>
             </h2>
             <dl class="news__list">
               <div class="news__row">
@@ -208,7 +207,7 @@
         </section>
 
         <!-- service -->
-        <section class="service" id="service">
+        <section class="service">
           <div class="service__wrapper">
             <h2 class="title">
               service<br /><span class="title--sub">事業内容</span>
@@ -274,7 +273,7 @@
         </section>
 
         <!-- works -->
-        <section class="works" id="works">
+        <section class="works">
           <div class="works__wrapper">
             <h2 class="title">
               works<br /><span class="title--sub">制作実績</span>
@@ -338,7 +337,7 @@
         </section>
 
         <!-- company -->
-        <section class="company" id="company">
+        <section class="company">
           <div class="company__wrapper">
             <h2 class="title">
               company<br /><span class="title--sub">私たちについて</span>
@@ -361,11 +360,8 @@
         </section>
 
         <!-- recruit -->
-        <section class="recruit" id="recruit">
-          <div class="recruit__img">
-            <!-- <img srcset="../img/you-x-ventures-X8H8vPcelPk-unsplash.png 665w, ../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png 1330w"
-              sizes="(max-width: 665px) 100vw, 1330px" src="../img/you-x-ventures-X8H8vPcelPk-unsplash.png" alt="採用情報のイメージ"> -->
-          </div>
+        <section class="recruit">
+          <div class="recruit__img"></div>
           <div class="recruit__wrapper">
             <h2 class="title">
               recruit<br /><span class="title--sub">採用情報</span>
@@ -376,7 +372,7 @@
         </section>
 
         <!-- contact -->
-        <section class="contact" id="contact">
+        <section class="contact">
           <h2 class="title">
             contact<br /><span class="title--sub">お問い合わせ</span>
           </h2>
@@ -410,11 +406,13 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@5.3.6/js/swiper.min.js"></script>
-    <!-- vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- vue 開発-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script> -->
+    <!-- vue 本番 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <!-- vue-awesome-swiper -->
     <script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper"></script>
     <!-- js -->
-    <script src="../js/top.min.js"></script>
+    <script src="../js/top.js"></script>
   </body>
 </html>

@@ -332,6 +332,7 @@ body {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   margin: auto 0;
+  margin-left: auto;
 }
 .hamburger:hover {
   opacity: 0.8;

@@ -1,4 +1,5 @@
 @use "../../config" as cfg;
+// perfectpixelで照らし合わせた結果ずれていた箇所のxdの記述サイズを残している
 
 // news
 .news {
@@ -50,12 +51,13 @@
   .news {
     margin-top: 70px;
     &__wrapper {
-      max-width: 917px;
-      margin: 0 auto;
+      max-width: 957px;
+      margin-left: 17.926%;
       display: flex;
     }
     &__list {
       margin: 0 0 0 3.472%;
+      flex: auto;
     }
     &__term {
       flex: 28.25%;

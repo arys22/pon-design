@@ -5,8 +5,9 @@ const vm1 = new Vue({
   data: {
     ActiveBtn: false,
     scrollY: 0,
+    pageTop: false, // ページtopのv-how
   },
-  mounted() {
+  mounted: function () {
     // スクロール時 スクロール位置を取得
     window.addEventListener("scroll", this.onScroll);
     // ロード時
@@ -14,12 +15,13 @@ const vm1 = new Vue({
   },
   methods: {
     // スクロールを検知
-    onScroll() {
-      this.scrollY = window.scrollY;
+    onScroll: function () {
+      this.scrollY = window.scrollY|| window.pageYOffset;
+      // window.scrollYはIE11非対応のため
     },
 
     // top戻る
-    returnTop() {
+    returnTop: function () {
       // ver.1
       // window.scrollTo({
       //   top: 0,
@@ -32,6 +34,16 @@ const vm1 = new Vue({
       if (this.scrollY > 0) {
         // 再帰処理 0.01秒
         window.setTimeout(this.returnTop, 7);
+      }
+    },
+  },
+  computed: {
+    // header
+    headerChange: function () {
+      if (this.scrollY > 0) {
+        return true;
+      } else {
+        return false;
       }
     },
   },

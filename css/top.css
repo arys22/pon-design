@@ -152,39 +152,37 @@
     -webkit-animation: move-pc 1.4s ease-in-out infinite;
             animation: move-pc 1.4s ease-in-out infinite;
   }
-
-  @-webkit-keyframes move-pc {
-    0% {
-      height: 0;
-      top: 0;
-      opacity: 0;
-    }
-    70% {
-      height: 56px;
-      opacity: 1;
-    }
-    100% {
-      height: 0;
-      top: 80px;
-      opacity: 0;
-    }
+}
+@-webkit-keyframes move-pc {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
   }
-
-  @keyframes move-pc {
-    0% {
-      height: 0;
-      top: 0;
-      opacity: 0;
-    }
-    70% {
-      height: 56px;
-      opacity: 1;
-    }
-    100% {
-      height: 0;
-      top: 80px;
-      opacity: 0;
-    }
+  70% {
+    height: 56px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 80px;
+    opacity: 0;
+  }
+}
+@keyframes move-pc {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  70% {
+    height: 56px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 80px;
+    opacity: 0;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -238,14 +236,17 @@
     margin-top: 70px;
   }
   .news__wrapper {
-    max-width: 917px;
-    margin: 0 auto;
+    max-width: 957px;
+    margin-left: 17.926%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .news__list {
     margin: 0 0 0 3.472%;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
   }
   .news__term {
     -webkit-box-flex: 28.25%;
@@ -315,12 +316,12 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .service__box {
     margin-top: 0px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -366,7 +367,7 @@
 }
 
 .works__slider .swiper-pagination {
-  position: initial;
+  position: static;
   text-align: right;
 }
 .works__slider .swiper-pagination-bullet {
@@ -435,7 +436,7 @@
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 1.5;
-  margin-top: 22px;
+  margin-top: 18px;
   position: relative;
   min-width: 265px;
   z-index: 0;
@@ -468,7 +469,7 @@
   z-index: -1;
 }
 .company__text {
-  margin: 39px 0 25px;
+  margin: 35px 0 25px;
 }
 
 @media screen and (min-width: 576px) {
@@ -501,15 +502,16 @@
   .company__text {
     margin: 41px 0 30px;
   }
+
+  /* 高解像度対応 背景*/
 }
-/* 高解像度対応 背景*/
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 576px) and (min-resolution: 192dpi) {
   .company__wrapper {
     background-image: url(../img/bg-face@2x.png);
   }
 }
 .recruit {
-  margin: 40px 0 60px;
+  margin: 40px 0 80px;
 }
 .recruit__wrapper {
   padding: 60px 5.33% 50px;
@@ -562,7 +564,9 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .recruit__img {
-    background-image: url(../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png);
+    background: url(../img/you-x-ventures-X8H8vPcelPk-unsplash@2x.png);
+    background-position: top;
+    background-size: cover;
   }
 }
 .contact {

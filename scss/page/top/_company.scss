@@ -84,13 +84,12 @@
       margin: 41px 0 30px;
     }
   }
-}
-
-/* 高解像度対応 背景*/
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .company {
-    &__wrapper {
-      background-image: url(../img/bg-face@2x.png);
+  /* 高解像度対応 背景*/
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .company {
+      &__wrapper {
+        background-image: url(../img/bg-face@2x.png);
+      }
     }
   }
 }

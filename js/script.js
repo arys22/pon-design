@@ -6,7 +6,7 @@ const vm1 = new Vue({
     ActiveBtn: false,
     scrollY: 0,
   },
-  mounted() {
+  mounted (){
     // スクロール時 スクロール位置を取得
     window.addEventListener("scroll", this.onScroll);
     // ロード時
