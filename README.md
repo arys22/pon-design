@@ -35,12 +35,12 @@
 
 ### 6. ブラウザ
    - [x] iphone・Android 
-   - [x] Chrome ➡ シークレットウインドウ
+   - [x] Chrome 
    - [x] Edge
    - [x] IE
-   - [x] Safari ➡ DevTools で UserAgent を変更
-   - [x] FireFox ➡ DevTools で UserAgent を変更
- - [x] 確認した、Chrome、FireFox、IE、Safari、Edgeのバージョン記録
+   - [x] Safari
+   - [x] FireFox
+ 　- [x] 確認した、Chrome、FireFox、IE、Safari、Edgeのバージョン記録
 
 ## 7. デベロッパツール
  - [x] コンソールエラー 
