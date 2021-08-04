@@ -476,16 +476,13 @@
   .company {
     margin: 60px auto 0;
     max-width: 1300px;
-    background: url(../img/bg-circle.svg) no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../img/bg-face.png) no-repeat, url(../img/bg-circle.svg) no-repeat;
+    background-position: 50% 35px, top;
+    background-size: auto, contain;
     padding: 136px 0 73px;
   }
   .company__wrapper {
     padding: 0;
-    background: url(../img/bg-face.png) no-repeat;
-    background-position: center;
-    background-size: cover;
   }
   .company__title {
     font-size: 4rem;

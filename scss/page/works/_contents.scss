@@ -8,7 +8,7 @@
   &__img {
     margin-bottom: 40px;
   }
-  &__picture{
+  &__picture {
     box-shadow: 0 0 15px rgba(0, 0, 0, 20%);
   }
   &__text {
@@ -29,7 +29,7 @@
       max-width: 1110px;
       display: flex;
       flex-wrap: wrap;
-      margin:0 auto ;
+      margin: 0 auto;
       justify-content: space-between;
     }
     &__img {
@@ -38,12 +38,12 @@
       height: fit-content;
       margin-bottom: 28px;
       &:nth-of-type(4),
-      &:nth-of-type(5){
-      margin-bottom: 0;
+      &:nth-of-type(5) {
+        margin-bottom: 0;
       }
-      &:nth-of-type(3n-1):nth-last-of-type(1){
-        margin-right:auto;
-        margin-left:30px;
+      &:nth-of-type(3n-1):nth-last-of-type(1) {
+        margin-right: auto;
+        margin-left: 2.08%;
       }
     }
     &__text {
