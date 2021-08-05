@@ -154,6 +154,10 @@
   margin-bottom: 50px;
 }
 
+.btn {
+  line-height: normal;
+}
+
 .space-1 {
   margin-left: 21px;
 }
