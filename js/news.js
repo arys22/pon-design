@@ -6,7 +6,7 @@ const vm1 = new Vue({
     ActiveBtn: false,
     scrollY: 0,
   },
-  mounted() {
+  mounted: function() {
     // スクロール時 スクロール位置を取得
     window.addEventListener("scroll", this.onScroll);
     // ロード時
@@ -14,12 +14,13 @@ const vm1 = new Vue({
   },
   methods: {
     // スクロールを検知
-    onScroll() {
-      this.scrollY = window.scrollY;
+    onScroll: function() {
+      this.scrollY = window.scrollY|| window.pageYOffset;
+      // window.scrollYはIE11非対応のため
     },
 
     // top戻る
-    returnTop() {
+    returnTop: function() {
       // ver.1
       // window.scrollTo({
       //   top: 0,
@@ -63,7 +64,7 @@ const vm3 = new Vue({
       });
     }
   },
-  mounted () {//要素の情報を取得
+  mounted: function () {//要素の情報を取得
     const rect = this.$refs.news.getBoundingClientRect();
     // 最上部からの距離
     this.top = rect.top + window.pageYOffset - 100;
