@@ -34,13 +34,13 @@
  - [x] リンク要素（ボタン等）の hover時の挙動は設定 (特に指示がない場合は、とりあえずopacityを当てとく)
 
 ### 6. ブラウザ
-   - [x] iphone・Android 
-   - [x] Chrome 
-   - [x] Edge
-   - [x] IE
-   - [x] Safari
-   - [x] FireFox
- 　- [x] 確認した、Chrome、FireFox、IE、Safari、Edgeのバージョン記録
+ - [x] iphone・Android 
+ - [x] Chrome 
+ - [x] Edge
+ - [x] IE
+ - [x] Safari
+ - [x] FireFox
+ - [x] 確認した、Chrome、FireFox、IE、Safari、Edgeのバージョン記録
 
-## 7. デベロッパツール
+### 7. デベロッパツール
  - [x] コンソールエラー 
