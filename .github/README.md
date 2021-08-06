@@ -1,6 +1,8 @@
 # pon-design
 デザインカンプからのコーディング練習教材
-* @use使用
+* @import → @use使用
+* BEM
+* vue.js
 
 ***
 ## 最終チェックリスト
