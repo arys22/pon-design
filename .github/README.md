@@ -3,7 +3,7 @@ xdデザインカンプからのコーディング練習教材
 * @import → @use使用
 * BEM
 * vue.js
-* Retina高解像度
+* Retina高解像度対応
 
 ***
 ## 最終チェックリスト
@@ -40,7 +40,7 @@ xdデザインカンプからのコーディング練習教材
  - [x] iphone・Android 
  - [x] Chrome 
  - [x] Edge
- - [x] IE
+ - [x] IE11
  - [x] Safari
  - [x] FireFox
  - [x] 確認した、Chrome、FireFox、IE、Safari、Edgeのバージョン記録
