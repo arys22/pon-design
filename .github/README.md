@@ -1,6 +1,9 @@
 # pon-design
-デザインカンプからのコーディング練習教材
-* @use使用
+xdデザインカンプからのコーディング練習教材
+* @import → @use使用
+* BEM
+* vue.js
+* Retina高解像度対応
 
 ***
 ## 最終チェックリスト
@@ -24,7 +27,7 @@
 ### 3. SEO対策
  - [x] TDK(title(タイトル),description(ディスクリプション),keyword(キーワード)
  - [x] 大見出し ***h1タグ*** 確認
- - [ ] リンク切れチェック
+ - [x] リンク切れチェック
 ### 4. レスポンシブ
  - [x] スムーズに レスポンシブ化 されるか
  - [x] 水平スクロール しないか (レスポンシブ時)
@@ -37,7 +40,7 @@
  - [x] iphone・Android 
  - [x] Chrome 
  - [x] Edge
- - [x] IE
+ - [x] IE11
  - [x] Safari
  - [x] FireFox
  - [x] 確認した、Chrome、FireFox、IE、Safari、Edgeのバージョン記録
