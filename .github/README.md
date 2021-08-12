@@ -40,10 +40,9 @@ xdデザインカンプからのコーディング練習教材
  - [x] iphone・Android 
  - [x] Chrome 
  - [x] Edge
- - [x] IE11
  - [x] Safari
  - [x] FireFox
- - [x] 確認した、Chrome、FireFox、IE、Safari、Edgeのバージョン記録
+ - [x] 確認した、Chrome、FireFox、Safari、Edgeのバージョン記録
 
 ### 7. デベロッパツール
  - [x] コンソールエラー 
