@@ -1,5 +1,5 @@
 # pon-design
-xdデザインカンプからのコーディング練習教材
+xdデザインカンプからのコーディング
 * @import → @use使用
 * BEM
 * vue.js
