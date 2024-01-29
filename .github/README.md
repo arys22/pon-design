@@ -1,5 +1,5 @@
 # pon-design
-xdデザインカンプからのコーディング練習教材
+xdデザインカンプからのコーディング
 * @import → @use使用
 * BEM
 * vue.js
@@ -25,7 +25,7 @@ xdデザインカンプからのコーディング練習教材
  - [x] 見出し構造 が不自然ではないか
 
 ### 3. SEO対策
- - [x] TDK(title(タイトル),description(ディスクリプション),keyword(キーワード)
+ - [x] TDK(title(タイトル),description(ディスクリプション),keyword(キーワード)いらない×
  - [x] 大見出し ***h1タグ*** 確認
  - [x] リンク切れチェック
 ### 4. レスポンシブ
@@ -40,10 +40,9 @@ xdデザインカンプからのコーディング練習教材
  - [x] iphone・Android 
  - [x] Chrome 
  - [x] Edge
- - [x] IE11
  - [x] Safari
  - [x] FireFox
- - [x] 確認した、Chrome、FireFox、IE、Safari、Edgeのバージョン記録
+ - [x] 確認した、Chrome、FireFox、Safari、Edgeのバージョン記録
 
 ### 7. デベロッパツール
  - [x] コンソールエラー 
