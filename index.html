@@ -8,10 +8,10 @@
       name="description"
       content="【お客様の夢を叶えるWabサイトを制作】pon desiginは、サイト制作・webページ制作を主におこなっている東京都のwebデザイン会社のホームページです。新規サイトはもちろん、サイトリニューアルやランディングページ制作も行っております。"
     />
-    <meta
+    <!-- <meta
       name="keywords"
       content="webサイト制作,webデザイン,webサイト運用,アプリ開発,pon desigin"
-    />
+    /> -->
     <title>pon desigin</title>
     <!-- ファビコン -->
     <link rel="icon" href="img/favicon.ico" />
@@ -26,7 +26,6 @@
 
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/top.min.css" />
-
   </head>
 
   <body>
@@ -66,11 +65,15 @@
                 :class="{'nav':ActiveBtn}"
               >
                 <ul class="nav_sp__list">
-                  <li class="nav_sp__item"><a href="html/news.html">news</a></li>
+                  <li class="nav_sp__item">
+                    <a href="html/news.html">news</a>
+                  </li>
                   <li class="nav_sp__item">
                     <a href="html/service.html">service</a>
                   </li>
-                  <li class="nav_sp__item"><a href="html/works.html">works</a></li>
+                  <li class="nav_sp__item">
+                    <a href="html/works.html">works</a>
+                  </li>
                   <li class="nav_sp__item">
                     <a href="html/company.html">company</a>
                   </li>
@@ -233,10 +236,7 @@
               <div class="service__box">
                 <figure class="service__img">
                   <img
-                    srcset="
-                      img/service-1.png    335w,
-                      img/service-1@2x.png 670w
-                    "
+                    srcset="img/service-1.png 335w, img/service-1@2x.png 670w"
                     sizes="(max-width: 335px) 100vw, 670px"
                     src="img/service-1.png"
                     alt="Webサイト運用のイメージ"
@@ -252,10 +252,7 @@
               <div class="service__box">
                 <figure class="service__img">
                   <img
-                    srcset="
-                      img/service-2.png    335w,
-                      img/service-2@2x.png 670w
-                    "
+                    srcset="img/service-2.png 335w, img/service-2@2x.png 670w"
                     sizes="(max-width: 335px) 100vw, 670px"
                     src="img/service-2.png"
                     alt="アプリ開発のイメージ"
@@ -268,7 +265,9 @@
                 </p>
               </div>
             </div>
-            <div class="pc"><a href="html/service.html" class="btn">more</a></div>
+            <div class="pc">
+              <a href="html/service.html" class="btn">more</a>
+            </div>
           </div>
         </section>
 
@@ -311,10 +310,7 @@
                 <swiper-slide>
                   <figure>
                     <img
-                      srcset="
-                        img/tabilog.png    350w,
-                        img/tabilog@2x.png 700w
-                      "
+                      srcset="img/tabilog.png 350w, img/tabilog@2x.png 700w"
                       sizes="(max-width: 350px) 100vw, 700px"
                       src="img/tabilog.png"
                       alt="TABILOG様"
